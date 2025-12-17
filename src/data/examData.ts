@@ -155,3 +155,22 @@ export const hskModules: Module[] = [
 export const getModulesByExamType = (examType: ExamType): Module[] => {
   return examType === 'ielts' ? ieltsModules : examType === 'toeic' ? toeicModules : hskModules;
 };
+
+// IELTS Listening SubModules (for backward compatibility)
+export const listeningSubModules: SubModule[] = [
+  { id: 'ielts-listening-section-1', title: 'Section 1: Conversation', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-listening-section-2', title: 'Section 2: Monologue', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-listening-section-3', title: 'Section 3: Academic Discussion', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-listening-section-4', title: 'Section 4: Lecture', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
+];
+
+// Helper function to get tasks by submodule type
+export const getTasksBySubModuleType = (subModuleType: string): Task[] => {
+  const tasks: Record<string, Task[]> = {
+    'question-type': [
+      { id: 'task-1', title: 'Practice Questions', status: 'not-started', questionType: 'multiple-choice', questionCount: 10 },
+      { id: 'task-2', title: 'Full Test', status: 'not-started', questionType: 'multiple-choice', questionCount: 40 },
+    ],
+  };
+  return tasks[subModuleType] || [];
+};
