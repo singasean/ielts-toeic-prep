@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { ExamType, Module, TaskStatus } from '@/types/exam';
-import { ieltsModules, toeicModules } from '@/data/examData';
+import { ieltsModules, toeicModules, hskModules } from '@/data/examData';
 
 interface Progress {
   [moduleId: string]: {
@@ -23,7 +23,7 @@ export const ExamProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   const [examType, setExamType] = useState<ExamType>('ielts');
   const [progress, setProgress] = useState<Progress>({});
 
-  const modules = examType === 'ielts' ? ieltsModules : toeicModules;
+  const modules = examType === 'ielts' ? ieltsModules : examType === 'toeic' ? toeicModules : hskModules;
 
   const updateTaskProgress = (moduleId: string, taskId: string, status: TaskStatus) => {
     setProgress((prev) => ({
