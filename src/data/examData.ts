@@ -207,16 +207,6 @@ export const toeicModules: Module[] = [
     completedTasks: 0,
     examType: 'toeic',
   },
-  {
-    id: 'toeic-practice-tests',
-    title: 'Practice Tests',
-    icon: 'FileText',
-    skill: 'practice-tests',
-    description: 'Complete full-length TOEIC practice tests',
-    totalTasks: 600,
-    completedTasks: 0,
-    examType: 'toeic',
-  },
 ];
 
 // ============ HELPER FUNCTIONS ============
