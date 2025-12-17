@@ -28,6 +28,17 @@ export const ExamTypeSwitch = () => {
       >
         TOEIC
       </button>
+              <button
+          onClick={() => setExamType('hsk')}
+          className={cn(
+            "px-6 py-2 rounded-md text-sm font-medium transition-all duration-200",
+            examType === 'hsk'
+              ? "gradient-bg text-primary-foreground shadow-md"
+              : "text-muted-foreground hover:text-foreground hover:bg-background/50"
+          )}
+        >
+          HSK
+        </button>
     </div>
   );
 };
