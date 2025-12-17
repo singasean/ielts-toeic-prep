@@ -339,3 +339,19 @@ export const hskModules = [
     examType: 'hsk',
   },
 ];
+
+// Derive HSK_LEVELS from hskModules
+export const HSK_LEVELS = hskModules.map(module => ({
+  level: parseInt(module.id.split('-')[1]),
+  title: module.title,
+  icon: module.icon,
+  skill: module.skill,
+  description: module.description,
+  examType: module.examType,
+}));
+
+// Helper function to get submodules by level
+export const getHskSubModulesByLevel = (level: number) => {
+  const module = hskModules.find(m => m.examType === 'hsk' && m.id.includes(`-${level}-`));
+  return module ? Object.keys(module).filter(key => key.startsWith('hsk-')).map(key => ({ id: key, ...module[key as keyof typeof module] })) : [];
+};
