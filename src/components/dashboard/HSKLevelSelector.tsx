@@ -34,7 +34,7 @@ export const HSKLevelSelector: React.FC = () => {
                 <SelectItem key={level.level} value={String(level.level)}>
                   <span className="font-semibold">HSK {level.level}</span>
                 </SelectItem>
-            ))
+            ))}
                     </SelectContent>
 
           </Select>
