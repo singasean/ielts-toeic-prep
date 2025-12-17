@@ -5,6 +5,7 @@ export type SkillType =
   | 'reading' 
   | 'writing-task1' 
   | 'writing-task2' 
+    | 'writing'
   | 'speaking' 
   | 'practice-tests' 
   | 'vocabulary' 
