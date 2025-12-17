@@ -1,4 +1,4 @@
-export type ExamType = 'ielts' | 'toeic';
+export type ExamType = 'ielts' | 'toeic' | 'hsk';
 
 export type SkillType = 
   | 'listening' 
@@ -25,7 +25,10 @@ export type QuestionType =
   | 'diagram-labelling'
   | 'form-completion'
   | 'sentence-completion'
-  | 'short-answer';
+  | 'short-answer'
+  | 'hsk-listening'
+  | 'hsk-reading'
+  | 'hsk-writing';
 
 
 export type TaskStatus = 'not-started' | 'in-progress' | 'completed';
