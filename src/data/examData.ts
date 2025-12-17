@@ -21,6 +21,26 @@ export const ieltsModules: Module[] = [
     completedTasks: 0,
     examType: 'ielts',
   },
+    {
+    id: 'ielts-writing',
+    title: 'Writing',
+    icon: 'PenTool',
+    skill: 'writing',
+    description: 'Improve your academic writing skills for IELTS Task 1 & 2',
+    totalTasks: 30,
+    completedTasks: 0,
+    examType: 'ielts',
+  },
+  {
+    id: 'ielts-speaking',
+    title: 'Speaking',
+    icon: 'Mic',
+    skill: 'speaking',
+    description: 'Master the IELTS Speaking test with confidence',
+    totalTasks: 20,
+    completedTasks: 0,
+    examType: 'ielts',
+  },
 ];
 
 export const toeicModules: Module[] = [
