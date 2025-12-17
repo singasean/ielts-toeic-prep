@@ -1,7 +1,7 @@
 import { useExam } from '@/contexts/ExamContext';
 import { ModuleCard } from './ModuleCard';
 
-export const ModuleGrid = ({ hskLevel }  => {
+export const ModuleGrid = ({ hskLevel }) => {
   const { modules } = useExam();
     const filteredModules = modules.filter((module) => {
     // Hide Writing module for HSK levels 1-2
