@@ -169,6 +169,24 @@ export const toeicVocabularySubModules: SubModule[] = [
   { id: 'toeic-vocab-office', title: 'Office & Workplace', type: 'question-type', questionType: 'multiple-choice', totalItems: 40, completedItems: 0 },
   { id: 'toeic-vocab-professional', title: 'Professional Communication', type: 'question-type', questionType: 'multiple-choice', totalItems: 50, completedItems: 0 },
 ];
+export const toeicGrammarSubModules: SubModule[] = [
+ { id: 'toeic-grammar-tenses', title: 'Verb Tenses & Aspects', type: 'question-type', questionType: 'multiple-choice', totalItems: 40, completedItems: 0 },
+ { id: 'toeic-grammar-structures', title: 'Sentence Structures', type: 'question-type', questionType: 'multiple-choice', totalItems: 35, completedItems: 0 },
+ { id: 'toeic-grammar-articles', title: 'Articles & Prepositions', type: 'question-type', questionType: 'multiple-choice', totalItems: 30, completedItems: 0 },
+];
+
+export const toeicPhrasesIdiomsSubModules: SubModule[] = [
+ { id: 'toeic-phrases-common', title: 'Common Phrases', type: 'question-type', questionType: 'multiple-choice', totalItems: 50, completedItems: 0 },
+ { id: 'toeic-idioms-business', title: 'Business Idioms', type: 'question-type', questionType: 'multiple-choice', totalItems: 45, completedItems: 0 },
+ { id: 'toeic-phrasal-verbs', title: 'Phrasal Verbs', type: 'question-type', questionType: 'multiple-choice', totalItems: 40, completedItems: 0 },
+];
+
+export const toeicWritingSubModules: SubModule[] = [
+ { id: 'toeic-writing-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
+ { id: 'toeic-writing-emails', title: 'Email Writing', type: 'question-type', questionType: 'short-answer', totalItems: 30, completedItems: 0 },
+ { id: 'toeic-writing-reports', title: 'Reports & Memos', type: 'question-type', questionType: 'short-answer', totalItems: 25, completedItems: 0 },
+];
+
 
 export const toeicPracticeTestsSubModules: SubModule[] = [
   { id: 'toeic-practice-test1', title: 'Practice Test 1', type: 'question-type', questionType: 'multiple-choice', totalItems: 200, completedItems: 0 },
@@ -207,6 +225,36 @@ export const toeicModules: Module[] = [
     completedTasks: 0,
     examType: 'toeic',
   },
+    {
+    id: 'toeic-grammar',
+    title: 'Grammar',
+    icon: 'Type',
+    skill: 'grammar',
+    description: 'Master essential grammar for TOEIC',
+    totalTasks: 105,
+    completedTasks: 0,
+    examType: 'toeic',
+  },
+  {
+    id: 'toeic-phrases-idioms',
+    title: 'Phrases & Idioms',
+    icon: 'Lightbulb',
+    skill: 'phrases-idioms',
+    description: 'Learn common business phrases and idioms',
+    totalTasks: 135,
+    completedTasks: 0,
+    examType: 'toeic',
+  },
+  {
+    id: 'toeic-writing',
+    title: 'Writing',
+    icon: 'PenTool',
+    skill: 'writing',
+    description: 'Master business writing and email correspondence',
+    totalTasks: 57,
+    completedTasks: 0,
+    examType: 'toeic',
+  },
 ];
 
 // ============ HELPER FUNCTIONS ============
@@ -224,6 +272,9 @@ export const getModuleSubModules = (moduleId: string): SubModule[] => {
     'toeic-listening': toeicListeningSubModules,
     'toeic-reading': toeicReadingSubModules,
     'toeic-vocabulary': toeicVocabularySubModules,
+        'toeic-grammar': toeicGrammarSubModules,
+    'toeic-phrases-idioms': toeicPhrasesIdiomsSubModules,
+    'toeic-writing': toeicWritingSubModules,
     'toeic-practice-tests': toeicPracticeTestsSubModules,
   };
   return subModulesMap[moduleId] || [];
