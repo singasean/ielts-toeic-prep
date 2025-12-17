@@ -4,7 +4,7 @@ import { ModuleCard } from './ModuleCard';
 export const ModuleGrid = ({ hskLevel }) => {
   const { modules } = useExam();
     const filteredModules = modules.filter((module) => {
-    // Hide Writing module for HSK levels 1-2
+// Hide Writing module for HSK levels 1-2 only
     if (hskLevel && hskLevel < 3 && module.id === 'hsk-writing') {
       return false;
     }
