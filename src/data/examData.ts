@@ -339,3 +339,13 @@ export const hskModules = [
     examType: 'hsk',
   },
 ];
+
+// Convenience exports for MaterialsPage
+export const listeningSubModules = ieltsListeningSubModules;
+export const readingSubModules = ieltsReadingSubModules;
+export const writingTask1SubModules = ieltsWritingTask1SubModules;
+export const writingTask2SubModules = ieltsWritingTask2SubModules;
+export const speakingSubModules = ieltsSpeakingSubModules;
+export const practiceTestsSubModules = ieltsPracticeTestsSubModules;
+export const vocabularySubModules = ieltsVocabularySubModules;
+export const grammarSubModules = ieltsGrammarSubModules;
