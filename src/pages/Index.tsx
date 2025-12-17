@@ -2,6 +2,7 @@ import { DashboardLayout } from '@/components/layout/DashboardLayout';
 import { ExamTypeSwitch } from '@/components/dashboard/ExamTypeSwitch';
 import { ModuleGrid } from '@/components/dashboard/ModuleGrid';
 import { WelcomeBanner } from '@/components/dashboard/WelcomeBanner';
+import { HSKLevelSelector } from '@/components/dashboard/HSKLevelSelector';
 import { useExam } from '@/contexts/ExamContext';
 
 const Index = () => {
@@ -10,6 +11,7 @@ const Index = () => {
   return (
     <DashboardLayout>
       <WelcomeBanner />
+              <HSKLevelSelector />
       
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
         <div>
