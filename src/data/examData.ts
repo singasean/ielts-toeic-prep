@@ -421,6 +421,120 @@ export const sampleTasks: Task[] = [
   },
 ];
 
+// HSK Configuration
+export const HSK_LEVELS = [
+  { level: 1, title: 'HSK Level 1', skills: ['listening', 'reading'] },
+  { level: 2, title: 'HSK Level 2', skills: ['listening', 'reading'] },
+  { level: 3, title: 'HSK Level 3', skills: ['listening', 'reading', 'writing'] },
+  { level: 4, title: 'HSK Level 4', skills: ['listening', 'reading', 'writing'] },
+  { level: 5, title: 'HSK Level 5', skills: ['listening', 'reading', 'writing'] },
+  { level: 6, title: 'HSK Level 6', skills: ['listening', 'reading', 'writing'] },
+];
+
+// HSK SubModules by Level
+export const hskLevel1SubModules: SubModule[] = [
+  { id: 'listening-section-1', title: 'Listening Section 1', type: 'question-type', questionType: 'multiple-choice', totalItems: 5, completedItems: 0 },
+  { id: 'listening-section-2', title: 'Listening Section 2', type: 'question-type', questionType: 'matching', totalItems: 5, completedItems: 0 },
+  { id: 'listening-section-3', title: 'Listening Section 3', type: 'question-type', questionType: 'multiple-choice', totalItems: 5, completedItems: 0 },
+  { id: 'listening-section-4', title: 'Listening Section 4', type: 'question-type', questionType: 'multiple-choice', totalItems: 5, completedItems: 0 },
+  { id: 'reading', title: 'Reading', type: 'question-type', questionType: 'multiple-choice', totalItems: 20, completedItems: 0 },
+];
+
+export const hskLevel2SubModules: SubModule[] = [
+  { id: 'listening-section-1', title: 'Listening Section 1', type: 'question-type', questionType: 'multiple-choice', totalItems: 5, completedItems: 0 },
+  { id: 'listening-section-2', title: 'Listening Section 2', type: 'question-type', questionType: 'matching', totalItems: 5, completedItems: 0 },
+  { id: 'listening-section-3', title: 'Listening Section 3', type: 'question-type', questionType: 'multiple-choice', totalItems: 5, completedItems: 0 },
+  { id: 'listening-section-4', title: 'Listening Section 4', type: 'question-type', questionType: 'multiple-choice', totalItems: 5, completedItems: 0 },
+  { id: 'reading', title: 'Reading', type: 'question-type', questionType: 'multiple-choice', totalItems: 25, completedItems: 0 },
+];
+
+export const hskLevel3SubModules: SubModule[] = [
+  { id: 'listening-section-1', title: 'Listening Section 1', type: 'question-type', questionType: 'multiple-choice', totalItems: 5, completedItems: 0 },
+  { id: 'listening-section-2', title: 'Listening Section 2', type: 'question-type', questionType: 'matching', totalItems: 5, completedItems: 0 },
+  { id: 'listening-section-3', title: 'Listening Section 3', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
+  { id: 'listening-section-4', title: 'Listening Section 4', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
+  { id: 'reading', title: 'Reading', type: 'question-type', questionType: 'multiple-choice', totalItems: 30, completedItems: 0 },
+  { id: 'writing', title: 'Writing', type: 'question-type', questionType: 'short-answer', totalItems: 2, completedItems: 0 },
+];
+
+export const hskLevel4SubModules: SubModule[] = [
+  { id: 'listening-section-1', title: 'Listening Section 1', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
+  { id: 'listening-section-2', title: 'Listening Section 2', type: 'question-type', questionType: 'matching', totalItems: 10, completedItems: 0 },
+  { id: 'listening-section-3', title: 'Listening Section 3', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
+  { id: 'listening-section-4', title: 'Listening Section 4', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
+  { id: 'reading', title: 'Reading', type: 'question-type', questionType: 'multiple-choice', totalItems: 40, completedItems: 0 },
+  { id: 'writing', title: 'Writing', type: 'question-type', questionType: 'short-answer', totalItems: 3, completedItems: 0 },
+];
+
+export const hskLevel5SubModules: SubModule[] = [
+  { id: 'listening-section-1', title: 'Listening Section 1', type: 'question-type', questionType: 'multiple-choice', totalItems: 15, completedItems: 0 },
+  { id: 'listening-section-2', title: 'Listening Section 2', type: 'question-type', questionType: 'matching', totalItems: 15, completedItems: 0 },
+  { id: 'listening-section-3', title: 'Listening Section 3', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
+  { id: 'listening-section-4', title: 'Listening Section 4', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
+  { id: 'reading', title: 'Reading', type: 'question-type', questionType: 'multiple-choice', totalItems: 50, completedItems: 0 },
+  { id: 'writing', title: 'Writing', type: 'question-type', questionType: 'short-answer', totalItems: 3, completedItems: 0 },
+];
+
+export const hskLevel6SubModules: SubModule[] = [
+  { id: 'listening-section-1', title: 'Listening Section 1', type: 'question-type', questionType: 'multiple-choice', totalItems: 20, completedItems: 0 },
+  { id: 'listening-section-2', title: 'Listening Section 2', type: 'question-type', questionType: 'matching', totalItems: 20, completedItems: 0 },
+  { id: 'listening-section-3', title: 'Listening Section 3', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
+  { id: 'listening-section-4', title: 'Listening Section 4', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
+  { id: 'reading', title: 'Reading', type: 'question-type', questionType: 'multiple-choice', totalItems: 60, completedItems: 0 },
+  { id: 'writing', title: 'Writing', type: 'question-type', questionType: 'short-answer', totalItems: 3, completedItems: 0 },
+];
+
+// Helper function to get HSK SubModules by level
+export const getHskSubModulesByLevel = (level: number): SubModule[] => {
+  const levelModules: Record<number, SubModule[]> = {
+    1: hskLevel1SubModules,
+    2: hskLevel2SubModules,
+    3: hskLevel3SubModules,
+    4: hskLevel4SubModules,
+    5: hskLevel5SubModules,
+    6: hskLevel6SubModules,
+  };
+  return levelModules[level] || [];
+};
+
+// HSK Modules - Using Level 1 as base, user can select different levels via dropdown
+export const hskModules: Module[] = [
+  {
+    id: 'hsk-listening',
+    title: 'Listening',
+    icon: 'Headphones',
+    skill: 'listening',
+    description: 'Master HSK Listening with comprehensive practice',
+    totalTasks: 50,
+    completedTasks: 0,
+    examType: 'hsk',
+  },
+  {
+    id: 'hsk-reading',
+    title: 'Reading',
+    icon: 'BookOpen',
+    skill: 'reading',
+    description: 'Improve your reading comprehension skills for HSK',
+    totalTasks: 50,
+    completedTasks: 0,
+    examType: 'hsk',
+  },
+  {
+    id: 'hsk-writing',
+    title: 'Writing',
+    icon: 'PenTool',
+    skill: 'writing',
+    description: 'Writing practice for HSK levels 3-6',
+    totalTasks: 20,
+    completedTasks: 0,
+    examType: 'hsk',
+  },
+];
+
+
+
+
+
 export const getModulesByExamType = (examType: ExamType): Module[] => {
-  return examType === 'ielts' ? ieltsModules : toeicModules;
+  return examType === 'ielts' ? ieltsModules : examType === 'toeic' ? toeicModules : hskModules;
 };
