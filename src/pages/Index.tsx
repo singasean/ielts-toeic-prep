@@ -1,4 +1,5 @@
 import { DashboardLayout } from '@/components/layout/DashboardLayout';
+import { useState } from 'react';
 import { ExamTypeSwitch } from '@/components/dashboard/ExamTypeSwitch';
 import { ModuleGrid } from '@/components/dashboard/ModuleGrid';
 import { WelcomeBanner } from '@/components/dashboard/WelcomeBanner';
@@ -7,11 +8,12 @@ import { useExam } from '@/contexts/ExamContext';
 
 const Index = () => {
   const { examType } = useExam();
+    const [hskLevel, setHskLevel] = useState<number>(1);
 
   return (
     <DashboardLayout>
       <WelcomeBanner />
-              <HSKLevelSelector />
+              <HSKLevelSelector  onLevelChange={setHskLevel} />
       
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
         <div>
@@ -23,7 +25,7 @@ const Index = () => {
         <ExamTypeSwitch />
       </div>
 
-      <ModuleGrid />
+      <ModuleGrid hskLevel={hskLevel} />
     </DashboardLayout>
   );
 };
