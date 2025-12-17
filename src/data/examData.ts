@@ -350,6 +350,12 @@ export const practiceTestsSubModules = ieltsPracticeTestsSubModules;
 export const vocabularySubModules = ieltsVocabularySubModules;
 export const grammarSubModules = ieltsGrammarSubModules;
 
+// TOEIC convenience exports
+export const listeningSubModules = toeicListeningSubModules;
+export const readingSubModules = toeicReadingSubModules;
+export const vocabularySubModules = toeicVocabularySubModules;
+export const practiceTestsSubModules = toeicPracticeTestsSubModules;
+
 // Function to get tasks by sub-module type
 export const getTasksBySubModuleType = (subModuleType: string) => {
   const subModuleMap: Record<string, any> = {
@@ -361,6 +367,11 @@ export const getTasksBySubModuleType = (subModuleType: string) => {
     'practice-tests': practiceTestsSubModules,
     'vocabulary': vocabularySubModules,
     'grammar': grammarSubModules,
+        // TOEIC modules
+    'toeic-listening': toeicListeningSubModules,
+    'toeic-reading': toeicReadingSubModules,
+    'toeic-vocabulary': toeicVocabularySubModules,
+    'toeic-practice-tests': toeicPracticeTestsSubModules,
   };
   return subModuleMap[subModuleType] || [];
 };
