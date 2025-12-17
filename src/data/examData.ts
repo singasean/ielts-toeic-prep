@@ -3,23 +3,28 @@ import { Module, SubModule } from '@/types/exam';
 // ============ IELTS MODULES AND SUB-MODULES ============
 
 export const ieltsListeningSubModules: SubModule[] = [
-  { id: 'ielts-listening-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 3, completedItems: 0 },
+  { id: 'ielts-listening-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
   { id: 'ielts-listening-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 12, completedItems: 0 },
   { id: 'ielts-listening-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 8, completedItems: 0 },
-  { id: 'ielts-listening-map-labelling', title: 'Plan, Map, Diagram Labelling', type: 'question-type', questionType: 'diagram-labelling', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-listening-form-completion', title: 'Form, Note, Table, Flow Chart Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-listening-plan-map-diagram', title: 'Plan, Map, Diagram Labelling', type: 'question-type', questionType: 'diagram-labelling', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-listening-form-completion', title: 'Form, Note, Table, Flow Chart, Summary Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
   { id: 'ielts-listening-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-listening-summary', title: 'Summary Completion', type: 'question-type', questionType: 'form-completion', totalItems: 5, completedItems: 0 },
+  { id: 'ielts-listening-short-answer', title: 'Short Answer', type: 'question-type', questionType: 'short-answer', totalItems: 5, completedItems: 0 },
 ];
 
 export const ieltsReadingSubModules: SubModule[] = [
-  { id: 'ielts-reading-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 3, completedItems: 0 },
+  { id: 'ielts-reading-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
   { id: 'ielts-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 14, completedItems: 0 },
-  { id: 'ielts-reading-matching', title: 'Matching Headings', type: 'question-type', questionType: 'matching', totalItems: 8, completedItems: 0 },
-  { id: 'ielts-reading-classification', title: 'Classification', type: 'question-type', questionType: 'matching', totalItems: 7, completedItems: 0 },
+  { id: 'ielts-reading-identify-info-tfng', title: 'Identify Information (T/F/NG)', type: 'question-type', questionType: 'identify-info', totalItems: 12, completedItems: 0 },
+  { id: 'ielts-reading-identify-claims-ynng', title: 'Identify Writer\'s Views/Claims (Y/N/NG)', type: 'question-type', questionType: 'identify-views', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-reading-match-info', title: 'Match Information', type: 'question-type', questionType: 'matching', totalItems: 8, completedItems: 0 },
+  { id: 'ielts-reading-match-headings', title: 'Match Headings', type: 'question-type', questionType: 'matching', totalItems: 8, completedItems: 0 },
+  { id: 'ielts-reading-match-features', title: 'Match Features', type: 'question-type', questionType: 'matching', totalItems: 6, completedItems: 0 },
+  { id: 'ielts-reading-match-sentence-endings', title: 'Match Sentence Endings', type: 'question-type', questionType: 'matching', totalItems: 6, completedItems: 0 },
   { id: 'ielts-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-reading-short-answer', title: 'Short Answer Questions', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-reading-summary', title: 'Summary Completion', type: 'question-type', questionType: 'form-completion', totalItems: 8, completedItems: 0 },
+  { id: 'ielts-reading-summary-completion', title: 'Summary/Note/Table/Flow Chart Completion', type: 'question-type', questionType: 'form-completion', totalItems: 8, completedItems: 0 },
+  { id: 'ielts-reading-diagram-labelling', title: 'Diagram Label Completion', type: 'question-type', questionType: 'diagram-labelling', totalItems: 6, completedItems: 0 },
+  { id: 'ielts-reading-short-answer', title: 'Short Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
 export const ieltsWritingTask1SubModules: SubModule[] = [
