@@ -25,8 +25,7 @@ export const HSKLevelSelector: React.FC = () => {
         </div>
         <div className="flex items-center gap-3">
           <span className="text-white font-semibold">Level:</span>
-          value={String(selectedLevel)} onValueChange={(val) => { setSelectedLevel(Number(val)); onLevelChange?.(Number(val)); }}
-            <SelectTrigger className="w-32 bg-white border-0">
+          value={String(selectedLevel)} onValueChange={(val) => { setSelectedLevel(Number(val)); onLevelChange?.(Number(val)); }}            <SelectTrigger className="w-32 bg-white border-0">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
