@@ -29,7 +29,8 @@ export type QuestionType =
   | 'short-answer'
   | 'hsk-listening'
   | 'hsk-reading'
-  | 'hsk-writing';
+  | 'hsk-writing'
+  | 'fill-blank';
 
 
 export type TaskStatus = 'not-started' | 'in-progress' | 'completed';
