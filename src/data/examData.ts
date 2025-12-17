@@ -349,3 +349,18 @@ export const speakingSubModules = ieltsSpeakingSubModules;
 export const practiceTestsSubModules = ieltsPracticeTestsSubModules;
 export const vocabularySubModules = ieltsVocabularySubModules;
 export const grammarSubModules = ieltsGrammarSubModules;
+
+// Function to get tasks by sub-module type
+export const getTasksBySubModuleType = (subModuleType: string) => {
+  const subModuleMap: Record<string, any> = {
+    'listening': listeningSubModules,
+    'reading': readingSubModules,
+    'writing-task1': writingTask1SubModules,
+    'writing-task2': writingTask2SubModules,
+    'speaking': speakingSubModules,
+    'practice-tests': practiceTestsSubModules,
+    'vocabulary': vocabularySubModules,
+    'grammar': grammarSubModules,
+  };
+  return subModuleMap[subModuleType] || [];
+};
