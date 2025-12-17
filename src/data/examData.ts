@@ -2,13 +2,16 @@ import { Module, SubModule } from '@/types/exam';
 
 // ============ IELTS MODULES AND SUB-MODULES ============
 
-// LISTENING - 7 submodules
+// LISTENING - 10 submodules (UPDATED)
 export const ieltsListeningSubModules: SubModule[] = [
   { id: 'ielts-listening-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
   { id: 'ielts-listening-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 12, completedItems: 0 },
   { id: 'ielts-listening-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 8, completedItems: 0 },
-  { id: 'ielts-listening-plan-map-diagram', title: 'Plan, Map, Diagram Labelling', type: 'question-type', questionType: 'diagram-labelling', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-listening-form-completion', title: 'Form, Note, Table, Flow Chart, Summary Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-listening-plan-map-diagram', title: 'Plan/Map/Diagram Labelling', type: 'question-type', questionType: 'diagram-labelling', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-listening-form-completion', title: 'Form Completion', type: 'question-type', questionType: 'form-completion', totalItems: 8, completedItems: 0 },
+  { id: 'ielts-listening-note-completion', title: 'Note Completion', type: 'question-type', questionType: 'note-completion', totalItems: 8, completedItems: 0 },
+  { id: 'ielts-listening-table-completion', title: 'Table Completion', type: 'question-type', questionType: 'table-completion', totalItems: 8, completedItems: 0 },
+  { id: 'ielts-listening-flow-chart-summary', title: 'Flow Chart/Summary Completion', type: 'question-type', questionType: 'flow-chart-completion', totalItems: 10, completedItems: 0 },
   { id: 'ielts-listening-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
   { id: 'ielts-listening-short-answer', title: 'Short Answer', type: 'question-type', questionType: 'short-answer', totalItems: 5, completedItems: 0 },
 ];
@@ -82,7 +85,7 @@ export const ieltsModules: Module[] = [
     icon: 'Headphones',
     skill: 'listening',
     description: 'Master IELTS Listening with comprehensive practice',
-    totalTasks: 55,
+    totalTasks: 81,
     completedTasks: 0,
     examType: 'ielts',
   },
@@ -157,8 +160,8 @@ export const ieltsModules: Module[] = [
     examType: 'ielts',
   },
 ];
-
 // ============ TOEIC MODULES AND SUB-MODULES ============
+
 export const toeicListeningSubModules: SubModule[] = [
   { id: 'toeic-listening-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
   { id: 'toeic-listening-part1', title: 'Part 1: Photographs', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
@@ -266,35 +269,8 @@ export const toeicModules: Module[] = [
     examType: 'toeic',
   },
 ];
-// ============ HELPER FUNCTIONS ============
-export const getModuleSubModules = (moduleId: string): SubModule[] => {
-  const subModulesMap: Record<string, SubModule[]> = {
-    'ielts-listening': ieltsListeningSubModules,
-    'ielts-reading': ieltsReadingSubModules,
-    'ielts-writing-task1': ieltsWritingTask1SubModules,
-    'ielts-writing-task2': ieltsWritingTask2SubModules,
-    'ielts-speaking': ieltsSpeakingSubModules,
-    'ielts-practice-tests': ieltsPracticeTestsSubModules,
-    'ielts-vocabulary': ieltsVocabularySubModules,
-    'ielts-grammar': ieltsGrammarSubModules,
-    'toeic-listening': toeicListeningSubModules,
-    'toeic-reading': toeicReadingSubModules,
-    'toeic-vocabulary': toeicVocabularySubModules,
-    'toeic-grammar': toeicGrammarSubModules,
-    'toeic-phrases-idioms': toeicPhrasesIdiomsSubModules,
-    'toeic-writing': toeicWritingSubModules,
-    'toeic-practice-tests': toeicPracticeTestsSubModules,
-  };
-  return subModulesMap[moduleId] || [];
-};
-
-export const getModulesByExamType = (examType: string) => {
-  if (examType === 'ielts') return ieltsModules;
-  if (examType === 'toeic') return toeicModules;
-  return ieltsModules;
-};
-
 // ============ HSK SUPPORT ============
+
 export const HSK_LEVELS = [
   { level: 1, title: 'HSK Level 1', skills: ['listening', 'reading'] },
   { level: 2, title: 'HSK Level 2', skills: ['listening', 'reading'] },
@@ -386,6 +362,35 @@ export const hskModules = [
     examType: 'hsk',
   },
 ];
+
+// ============ HELPER FUNCTIONS ============
+
+export const getModuleSubModules = (moduleId: string): SubModule[] => {
+  const subModulesMap: Record<string, SubModule[]> = {
+    'ielts-listening': ieltsListeningSubModules,
+    'ielts-reading': ieltsReadingSubModules,
+    'ielts-writing-task1': ieltsWritingTask1SubModules,
+    'ielts-writing-task2': ieltsWritingTask2SubModules,
+    'ielts-speaking': ieltsSpeakingSubModules,
+    'ielts-practice-tests': ieltsPracticeTestsSubModules,
+    'ielts-vocabulary': ieltsVocabularySubModules,
+    'ielts-grammar': ieltsGrammarSubModules,
+    'toeic-listening': toeicListeningSubModules,
+    'toeic-reading': toeicReadingSubModules,
+    'toeic-vocabulary': toeicVocabularySubModules,
+    'toeic-grammar': toeicGrammarSubModules,
+    'toeic-phrases-idioms': toeicPhrasesIdiomsSubModules,
+    'toeic-writing': toeicWritingSubModules,
+    'toeic-practice-tests': toeicPracticeTestsSubModules,
+  };
+  return subModulesMap[moduleId] || [];
+};
+
+export const getModulesByExamType = (examType: string) => {
+  if (examType === 'ielts') return ieltsModules;
+  if (examType === 'toeic') return toeicModules;
+  return ieltsModules;
+};
 
 // Convenience exports for MaterialsPage
 export const listeningSubModules = ieltsListeningSubModules;
