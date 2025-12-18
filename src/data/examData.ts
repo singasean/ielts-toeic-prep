@@ -379,7 +379,7 @@ export const getModulesByExamType = (examType: string) => {
   if (examType === 'toeic') return toeicModules;
   return ieltsModules;
 };
-
+/*
 
 export const getTasksBySubModuleType = (subModuleType: string) => {
   const subModuleMap: Record<string, SubModule[]> = {
@@ -400,7 +400,7 @@ export const getTasksBySubModuleType = (subModuleType: string) => {
   return subModuleMap[subModuleType] || [];
 };
 
-/*
+*/
 
 export const getTasksBySubModuleType = (subModuleType: string) => {
   // This function should return Task[] not SubModule[]
@@ -427,4 +427,3 @@ export const generateTasksFromSubModule = (subModule: SubModule) => {
   return tasks;
 };
 
-*/
