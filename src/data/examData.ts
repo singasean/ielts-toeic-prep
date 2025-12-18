@@ -1,84 +1,27 @@
 import { Module, SubModule } from '@/types/exam';
 
-// ============ IELTS MODULES AND SUB-MODULES ============
+// ============ IELTS BANDS AND MODULES ============
 
-// LISTENING - 10 submodules
-export const ieltsListeningSubModules: SubModule[] = [
-  { id: 'ielts-listening-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
-  { id: 'ielts-listening-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 12, completedItems: 0 },
-  { id: 'ielts-listening-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 8, completedItems: 0 },
-  { id: 'ielts-listening-plan-map-diagram', title: 'Plan/Map/Diagram Labelling', type: 'question-type', questionType: 'diagram-labelling', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-listening-form-completion', title: 'Form Completion', type: 'question-type', questionType: 'form-completion', totalItems: 8, completedItems: 0 },
-  { id: 'ielts-listening-note-completion', title: 'Note Completion', type: 'question-type', questionType: 'note-completion', totalItems: 8, completedItems: 0 },
-  { id: 'ielts-listening-table-completion', title: 'Table Completion', type: 'question-type', questionType: 'table-completion', totalItems: 8, completedItems: 0 },
-  { id: 'ielts-listening-flow-chart-summary', title: 'Flow Chart/Summary Completion', type: 'question-type', questionType: 'flow-chart-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-listening-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-listening-short-answer', title: 'Short Answer', type: 'question-type', questionType: 'short-answer', totalItems: 5, completedItems: 0 },
+export const IELTS_BANDS = [
+  1.0, 1.5,
+  2.0, 2.5,
+  3.0, 3.5,
+  4.0, 4.5,
+  5.0, 5.5,
+  6.0, 6.5,
+  7.0, 7.5,
+  8.0, 8.5,
+  9.0,
 ];
 
-// READING - 12 submodules
-export const ieltsReadingSubModules: SubModule[] = [
-  { id: 'ielts-reading-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
-  { id: 'ielts-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 14, completedItems: 0 },
-  { id: 'ielts-reading-identify-info-tfng', title: 'Identify Information (T/F/NG)', type: 'question-type', questionType: 'identify-info', totalItems: 12, completedItems: 0 },
-  { id: 'ielts-reading-identify-claims-ynng', title: 'Identify Writer\'s Views/Claims (Y/N/NG)', type: 'question-type', questionType: 'identify-views', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-reading-match-info', title: 'Match Information', type: 'question-type', questionType: 'matching', totalItems: 8, completedItems: 0 },
-  { id: 'ielts-reading-match-headings', title: 'Match Headings', type: 'question-type', questionType: 'matching', totalItems: 8, completedItems: 0 },
-  { id: 'ielts-reading-match-features', title: 'Match Features', type: 'question-type', questionType: 'matching', totalItems: 6, completedItems: 0 },
-  { id: 'ielts-reading-match-sentence-endings', title: 'Match Sentence Endings', type: 'question-type', questionType: 'matching', totalItems: 6, completedItems: 0 },
-  { id: 'ielts-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-reading-summary-completion', title: 'Summary/Note/Table/Flow Chart Completion', type: 'question-type', questionType: 'form-completion', totalItems: 8, completedItems: 0 },
-  { id: 'ielts-reading-diagram-labelling', title: 'Diagram Label Completion', type: 'question-type', questionType: 'diagram-labelling', totalItems: 6, completedItems: 0 },
-  { id: 'ielts-reading-short-answer', title: 'Short Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
-];
-
-// WRITING TASK 1
-export const ieltsWritingTask1SubModules: SubModule[] = [
-  { id: 'ielts-writing-task1-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
-  { id: 'ielts-writing-task1-formal-letter', title: 'Formal Letter', type: 'question-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
-  { id: 'ielts-writing-task1-semi-formal-letter', title: 'Semi-formal Letter', type: 'question-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
-  { id: 'ielts-writing-task1-informal-letter', title: 'Informal Letter', type: 'question-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
-];
-
-// WRITING TASK 2
-export const ieltsWritingTask2SubModules: SubModule[] = [
-  { id: 'ielts-writing-task2-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
-  { id: 'ielts-writing-task2-opinion', title: 'Opinion Essays', type: 'question-type', questionType: 'short-answer', totalItems: 20, completedItems: 0 },
-  { id: 'ielts-writing-task2-discussion', title: 'Discussion Essays', type: 'question-type', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
-  { id: 'ielts-writing-task2-problem-solution', title: 'Problem-Solution Essays', type: 'question-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
-];
-
-// SPEAKING
-export const ieltsSpeakingSubModules: SubModule[] = [
-  { id: 'ielts-speaking-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
-  { id: 'ielts-speaking-part1', title: 'Part 1: Introduction', type: 'question-type', questionType: 'short-answer', totalItems: 40, completedItems: 0 },
-  { id: 'ielts-speaking-part2', title: 'Part 2: Long Turn', type: 'question-type', questionType: 'short-answer', totalItems: 30, completedItems: 0 },
-  { id: 'ielts-speaking-part3', title: 'Part 3: Discussion', type: 'question-type', questionType: 'short-answer', totalItems: 30, completedItems: 0 },
-];
-
-// VOCABULARY
-export const ieltsVocabularySubModules: SubModule[] = [
-  { id: 'ielts-vocab-general', title: 'General Vocabulary', type: 'question-type', questionType: 'multiple-choice', totalItems: 50, completedItems: 0 },
-  { id: 'ielts-vocab-academic', title: 'Academic Vocabulary', type: 'question-type', questionType: 'multiple-choice', totalItems: 60, completedItems: 0 },
-  { id: 'ielts-vocab-collocations', title: 'Collocations & Phrases', type: 'question-type', questionType: 'multiple-choice', totalItems: 40, completedItems: 0 },
-];
-
-// GRAMMAR
-export const ieltsGrammarSubModules: SubModule[] = [
-  { id: 'ielts-grammar-tenses', title: 'Tenses & Aspects', type: 'question-type', questionType: 'multiple-choice', totalItems: 30, completedItems: 0 },
-  { id: 'ielts-grammar-structures', title: 'Sentence Structures', type: 'question-type', questionType: 'multiple-choice', totalItems: 25, completedItems: 0 },
-  { id: 'ielts-grammar-errors', title: 'Grammar Errors Practice', type: 'question-type', questionType: 'multiple-choice', totalItems: 35, completedItems: 0 },
-];
-
-// Main modules list
 export const ieltsModules: Module[] = [
   {
     id: 'ielts-listening',
     title: 'Listening',
     icon: 'Headphones',
     skill: 'listening',
-    description: 'Master IELTS Listening with comprehensive practice',
-    totalTasks: 81,
+    description: 'IELTS Listening practice by band score',
+    totalTasks: 0,
     completedTasks: 0,
     examType: 'ielts',
   },
@@ -87,28 +30,18 @@ export const ieltsModules: Module[] = [
     title: 'Reading',
     icon: 'BookOpen',
     skill: 'reading',
-    description: 'Improve your reading comprehension skills',
-    totalTasks: 100,
+    description: 'IELTS Reading practice by band score',
+    totalTasks: 0,
     completedTasks: 0,
     examType: 'ielts',
   },
   {
-    id: 'ielts-writing-task1',
-    title: 'Writing Task 1',
+    id: 'ielts-writing',
+    title: 'Writing',
     icon: 'PenTool',
-    skill: 'writing-task1',
-    description: 'Master formal, semi-formal, and informal letters',
-    totalTasks: 38,
-    completedTasks: 0,
-    examType: 'ielts',
-  },
-  {
-    id: 'ielts-writing-task2',
-    title: 'Writing Task 2',
-    icon: 'PenTool',
-    skill: 'writing-task2',
-    description: 'Learn to write essays on various topics and styles',
-    totalTasks: 49,
+    skill: 'writing',
+    description: 'IELTS Writing (Task 1 & 2) by band score',
+    totalTasks: 0,
     completedTasks: 0,
     examType: 'ielts',
   },
@@ -117,32 +50,18 @@ export const ieltsModules: Module[] = [
     title: 'Speaking',
     icon: 'Mic',
     skill: 'speaking',
-    description: 'Prepare for all three parts of the IELTS Speaking test',
-    totalTasks: 102,
-    completedTasks: 0,
-    examType: 'ielts',
-  },
-  {
-    id: 'ielts-vocabulary',
-    title: 'Vocabulary',
-    icon: 'BookMarked',
-    skill: 'vocabulary',
-    description: 'Build your vocabulary for IELTS',
-    totalTasks: 150,
-    completedTasks: 0,
-    examType: 'ielts',
-  },
-  {
-    id: 'ielts-grammar',
-    title: 'Grammar',
-    icon: 'Type',
-    skill: 'grammar',
-    description: 'Master essential grammar for IELTS',
-    totalTasks: 90,
+    description: 'IELTS Speaking practice by band score',
+    totalTasks: 0,
     completedTasks: 0,
     examType: 'ielts',
   },
 ];
+
+export const getIeltsBands = () => IELTS_BANDS;
+
+export const getIeltsBandLabel = (band: number) => `Band ${band.toFixed(1)}`;
+
+
 
 // ============ TOEIC MODULES AND SUB-MODULES ============
 
