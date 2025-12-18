@@ -4,8 +4,8 @@ import { DashboardLayout } from '@/components/layout/DashboardLayout';
 import { TaskList } from '@/components/module/TaskList';
 import { Button } from '@/components/ui/button';
 import { 
-  listeningSubModules, 
-  getTasksBySubModuleType 
+  getModuleSubModules,
+  generateTasksFromSubModule 
 } from '@/data/examData';
 
 const TasksPage = () => {
@@ -15,10 +15,17 @@ const TasksPage = () => {
     subModuleId: string 
   }>();
 
-  const subModule = listeningSubModules.find(sm => sm.id === subModuleId);
+  // Construct the module ID based on exam type and skill
+  const moduleId = `${examType}-${skill}`;
   
-  // Get the correct tasks for this submodule type
-  const tasks = subModule ? getTasksBySubModuleType(subModule.type) : [];
+  // Get the submodules for this module
+  const subModules = getModuleSubModules(moduleId);
+  
+  // Find the specific submodule
+  const subModule = subModules.find(sm => sm.id === subModuleId);
+  
+  // Generate tasks from the submodule
+  const tasks = subModule ? generateTasksFromSubModule(subModule) : [];
 
   return (
     <DashboardLayout>

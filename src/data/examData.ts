@@ -2,7 +2,7 @@ import { Module, SubModule } from '@/types/exam';
 
 // ============ IELTS MODULES AND SUB-MODULES ============
 
-// LISTENING - 10 submodules (UPDATED)
+// LISTENING - 10 submodules
 export const ieltsListeningSubModules: SubModule[] = [
   { id: 'ielts-listening-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
   { id: 'ielts-listening-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 12, completedItems: 0 },
@@ -16,7 +16,7 @@ export const ieltsListeningSubModules: SubModule[] = [
   { id: 'ielts-listening-short-answer', title: 'Short Answer', type: 'question-type', questionType: 'short-answer', totalItems: 5, completedItems: 0 },
 ];
 
-// READING - 12 submodules (NOT the same as Listening!)
+// READING - 12 submodules
 export const ieltsReadingSubModules: SubModule[] = [
   { id: 'ielts-reading-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
   { id: 'ielts-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 14, completedItems: 0 },
@@ -32,7 +32,7 @@ export const ieltsReadingSubModules: SubModule[] = [
   { id: 'ielts-reading-short-answer', title: 'Short Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
-// WRITING TASK 1 - 3 letter types
+// WRITING TASK 1
 export const ieltsWritingTask1SubModules: SubModule[] = [
   { id: 'ielts-writing-task1-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
   { id: 'ielts-writing-task1-formal-letter', title: 'Formal Letter', type: 'question-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
@@ -54,13 +54,6 @@ export const ieltsSpeakingSubModules: SubModule[] = [
   { id: 'ielts-speaking-part1', title: 'Part 1: Introduction', type: 'question-type', questionType: 'short-answer', totalItems: 40, completedItems: 0 },
   { id: 'ielts-speaking-part2', title: 'Part 2: Long Turn', type: 'question-type', questionType: 'short-answer', totalItems: 30, completedItems: 0 },
   { id: 'ielts-speaking-part3', title: 'Part 3: Discussion', type: 'question-type', questionType: 'short-answer', totalItems: 30, completedItems: 0 },
-];
-
-// PRACTICE TESTS
-export const ieltsPracticeTestsSubModules: SubModule[] = [
-  { id: 'ielts-practice-test1', title: 'Practice Test 1', type: 'question-type', questionType: 'multiple-choice', totalItems: 40, completedItems: 0 },
-  { id: 'ielts-practice-test2', title: 'Practice Test 2', type: 'question-type', questionType: 'multiple-choice', totalItems: 40, completedItems: 0 },
-  { id: 'ielts-practice-test3', title: 'Practice Test 3', type: 'question-type', questionType: 'multiple-choice', totalItems: 40, completedItems: 0 },
 ];
 
 // VOCABULARY
@@ -105,7 +98,7 @@ export const ieltsModules: Module[] = [
     icon: 'PenTool',
     skill: 'writing-task1',
     description: 'Master formal, semi-formal, and informal letters',
-    totalTasks: 36,
+    totalTasks: 38,
     completedTasks: 0,
     examType: 'ielts',
   },
@@ -115,7 +108,7 @@ export const ieltsModules: Module[] = [
     icon: 'PenTool',
     skill: 'writing-task2',
     description: 'Learn to write essays on various topics and styles',
-    totalTasks: 47,
+    totalTasks: 49,
     completedTasks: 0,
     examType: 'ielts',
   },
@@ -126,16 +119,6 @@ export const ieltsModules: Module[] = [
     skill: 'speaking',
     description: 'Prepare for all three parts of the IELTS Speaking test',
     totalTasks: 102,
-    completedTasks: 0,
-    examType: 'ielts',
-  },
-  {
-    id: 'ielts-practice-tests',
-    title: 'Practice Tests',
-    icon: 'FileText',
-    skill: 'practice-tests',
-    description: 'Complete full-length practice tests',
-    totalTasks: 120,
     completedTasks: 0,
     examType: 'ielts',
   },
@@ -160,51 +143,57 @@ export const ieltsModules: Module[] = [
     examType: 'ielts',
   },
 ];
+
 // ============ TOEIC MODULES AND SUB-MODULES ============
 
 export const toeicListeningSubModules: SubModule[] = [
   { id: 'toeic-listening-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
-  { id: 'toeic-listening-part1', title: 'Part 1: Photographs', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'toeic-listening-part2', title: 'Part 2: Question-Response', type: 'question-type', questionType: 'multiple-choice', totalItems: 25, completedItems: 0 },
-  { id: 'toeic-listening-part3', title: 'Part 3: Conversations', type: 'question-type', questionType: 'multiple-choice', totalItems: 30, completedItems: 0 },
-  { id: 'toeic-listening-part4', title: 'Part 4: Talks', type: 'question-type', questionType: 'multiple-choice', totalItems: 30, completedItems: 0 },
+  { id: 'toeic-listening-part1', title: 'Photographs', type: 'question-type', questionType: 'multiple-choice', totalItems: 6, completedItems: 0 },
+  { id: 'toeic-listening-part2', title: 'Question-Response', type: 'question-type', questionType: 'multiple-choice', totalItems: 25, completedItems: 0 },
+  { id: 'toeic-listening-part3', title: 'Conversations', type: 'question-type', questionType: 'multiple-choice', totalItems: 39, completedItems: 0 },
+  { id: 'toeic-listening-part4', title: 'Short Talks', type: 'question-type', questionType: 'multiple-choice', totalItems: 30, completedItems: 0 },
 ];
 
 export const toeicReadingSubModules: SubModule[] = [
   { id: 'toeic-reading-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
-  { id: 'toeic-reading-part5', title: 'Part 5: Incomplete Sentences', type: 'question-type', questionType: 'multiple-choice', totalItems: 30, completedItems: 0 },
-  { id: 'toeic-reading-part6', title: 'Part 6: Text Completion', type: 'question-type', questionType: 'multiple-choice', totalItems: 16, completedItems: 0 },
-  { id: 'toeic-reading-part7', title: 'Part 7: Reading Comprehension', type: 'question-type', questionType: 'multiple-choice', totalItems: 54, completedItems: 0 },
+  { id: 'toeic-reading-part5', title: 'Incomplete Sentences', type: 'question-type', questionType: 'multiple-choice', totalItems: 30, completedItems: 0 },
+  { id: 'toeic-reading-part6', title: 'Text Completion', type: 'question-type', questionType: 'multiple-choice', totalItems: 16, completedItems: 0 },
+  { id: 'toeic-reading-part7-single', title: 'Single Passages', type: 'question-type', questionType: 'multiple-choice', totalItems: 29, completedItems: 0 },
+  { id: 'toeic-reading-part7-double', title: 'Double Passages', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
+  { id: 'toeic-reading-part7-triple', title: 'Triple Passages', type: 'question-type', questionType: 'multiple-choice', totalItems: 15, completedItems: 0 },
 ];
 
 export const toeicVocabularySubModules: SubModule[] = [
-  { id: 'toeic-vocab-business', title: 'Business Vocabulary', type: 'question-type', questionType: 'multiple-choice', totalItems: 60, completedItems: 0 },
+  { id: 'toeic-vocab-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
+  { id: 'toeic-vocab-business', title: 'Business Vocabulary', type: 'question-type', questionType: 'multiple-choice', totalItems: 50, completedItems: 0 },
   { id: 'toeic-vocab-office', title: 'Office & Workplace', type: 'question-type', questionType: 'multiple-choice', totalItems: 40, completedItems: 0 },
-  { id: 'toeic-vocab-professional', title: 'Professional Communication', type: 'question-type', questionType: 'multiple-choice', totalItems: 50, completedItems: 0 },
+  { id: 'toeic-vocab-finance', title: 'Finance & Accounting', type: 'question-type', questionType: 'multiple-choice', totalItems: 30, completedItems: 0 },
+  { id: 'toeic-vocab-marketing', title: 'Marketing & Sales', type: 'question-type', questionType: 'multiple-choice', totalItems: 30, completedItems: 0 },
+  { id: 'toeic-vocab-travel', title: 'Travel & Transportation', type: 'question-type', questionType: 'multiple-choice', totalItems: 25, completedItems: 0 },
 ];
 
 export const toeicGrammarSubModules: SubModule[] = [
-  { id: 'toeic-grammar-tenses', title: 'Verb Tenses & Aspects', type: 'question-type', questionType: 'multiple-choice', totalItems: 40, completedItems: 0 },
-  { id: 'toeic-grammar-structures', title: 'Sentence Structures', type: 'question-type', questionType: 'multiple-choice', totalItems: 35, completedItems: 0 },
-  { id: 'toeic-grammar-articles', title: 'Articles & Prepositions', type: 'question-type', questionType: 'multiple-choice', totalItems: 30, completedItems: 0 },
+  { id: 'toeic-grammar-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
+  { id: 'toeic-grammar-verb-tenses', title: 'Verb Tenses', type: 'question-type', questionType: 'multiple-choice', totalItems: 25, completedItems: 0 },
+  { id: 'toeic-grammar-parts-of-speech', title: 'Parts of Speech', type: 'question-type', questionType: 'multiple-choice', totalItems: 30, completedItems: 0 },
+  { id: 'toeic-grammar-prepositions', title: 'Prepositions', type: 'question-type', questionType: 'multiple-choice', totalItems: 20, completedItems: 0 },
+  { id: 'toeic-grammar-conjunctions', title: 'Conjunctions', type: 'question-type', questionType: 'multiple-choice', totalItems: 15, completedItems: 0 },
+  { id: 'toeic-grammar-word-forms', title: 'Word Forms', type: 'question-type', questionType: 'multiple-choice', totalItems: 25, completedItems: 0 },
 ];
 
 export const toeicPhrasesIdiomsSubModules: SubModule[] = [
-  { id: 'toeic-phrases-common', title: 'Common Phrases', type: 'question-type', questionType: 'multiple-choice', totalItems: 50, completedItems: 0 },
-  { id: 'toeic-idioms-business', title: 'Business Idioms', type: 'question-type', questionType: 'multiple-choice', totalItems: 45, completedItems: 0 },
-  { id: 'toeic-phrasal-verbs', title: 'Phrasal Verbs', type: 'question-type', questionType: 'multiple-choice', totalItems: 40, completedItems: 0 },
+  { id: 'toeic-phrases-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
+  { id: 'toeic-phrases-common', title: 'Common Business Phrases', type: 'question-type', questionType: 'multiple-choice', totalItems: 40, completedItems: 0 },
+  { id: 'toeic-idioms-business', title: 'Business Idioms', type: 'question-type', questionType: 'multiple-choice', totalItems: 35, completedItems: 0 },
+  { id: 'toeic-phrasal-verbs', title: 'Phrasal Verbs', type: 'question-type', questionType: 'multiple-choice', totalItems: 30, completedItems: 0 },
+  { id: 'toeic-collocations', title: 'Common Collocations', type: 'question-type', questionType: 'multiple-choice', totalItems: 30, completedItems: 0 },
 ];
 
 export const toeicWritingSubModules: SubModule[] = [
   { id: 'toeic-writing-overview', title: 'Overview', type: 'overview', questionType: 'overview', totalItems: 2, completedItems: 0 },
-  { id: 'toeic-writing-emails', title: 'Email Writing', type: 'question-type', questionType: 'short-answer', totalItems: 30, completedItems: 0 },
-  { id: 'toeic-writing-reports', title: 'Reports & Memos', type: 'question-type', questionType: 'short-answer', totalItems: 25, completedItems: 0 },
-];
-
-export const toeicPracticeTestsSubModules: SubModule[] = [
-  { id: 'toeic-practice-test1', title: 'Practice Test 1', type: 'question-type', questionType: 'multiple-choice', totalItems: 200, completedItems: 0 },
-  { id: 'toeic-practice-test2', title: 'Practice Test 2', type: 'question-type', questionType: 'multiple-choice', totalItems: 200, completedItems: 0 },
-  { id: 'toeic-practice-test3', title: 'Practice Test 3', type: 'question-type', questionType: 'multiple-choice', totalItems: 200, completedItems: 0 },
+  { id: 'toeic-writing-emails', title: 'Email Writing', type: 'question-type', questionType: 'short-answer', totalItems: 25, completedItems: 0 },
+  { id: 'toeic-writing-requests', title: 'Write a Request', type: 'question-type', questionType: 'short-answer', totalItems: 20, completedItems: 0 },
+  { id: 'toeic-writing-opinion', title: 'Express an Opinion', type: 'question-type', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
 ];
 
 export const toeicModules: Module[] = [
@@ -214,7 +203,7 @@ export const toeicModules: Module[] = [
     icon: 'Headphones',
     skill: 'listening-comprehension',
     description: 'Master TOEIC Listening (Parts 1-4)',
-    totalTasks: 95,
+    totalTasks: 102,
     completedTasks: 0,
     examType: 'toeic',
   },
@@ -224,7 +213,7 @@ export const toeicModules: Module[] = [
     icon: 'BookOpen',
     skill: 'reading-comprehension',
     description: 'Master TOEIC Reading (Parts 5-7)',
-    totalTasks: 100,
+    totalTasks: 102,
     completedTasks: 0,
     examType: 'toeic',
   },
@@ -234,7 +223,7 @@ export const toeicModules: Module[] = [
     icon: 'BookMarked',
     skill: 'vocabulary',
     description: 'Build professional vocabulary for TOEIC',
-    totalTasks: 150,
+    totalTasks: 177,
     completedTasks: 0,
     examType: 'toeic',
   },
@@ -244,7 +233,7 @@ export const toeicModules: Module[] = [
     icon: 'Type',
     skill: 'grammar',
     description: 'Master essential grammar for TOEIC',
-    totalTasks: 105,
+    totalTasks: 117,
     completedTasks: 0,
     examType: 'toeic',
   },
@@ -254,7 +243,7 @@ export const toeicModules: Module[] = [
     icon: 'Lightbulb',
     skill: 'phrases-idioms',
     description: 'Learn common business phrases and idioms',
-    totalTasks: 135,
+    totalTasks: 137,
     completedTasks: 0,
     examType: 'toeic',
   },
@@ -264,11 +253,12 @@ export const toeicModules: Module[] = [
     icon: 'PenTool',
     skill: 'writing',
     description: 'Master business writing and email correspondence',
-    totalTasks: 57,
+    totalTasks: 62,
     completedTasks: 0,
     examType: 'toeic',
   },
 ];
+
 // ============ HSK SUPPORT ============
 
 export const HSK_LEVELS = [
@@ -372,7 +362,6 @@ export const getModuleSubModules = (moduleId: string): SubModule[] => {
     'ielts-writing-task1': ieltsWritingTask1SubModules,
     'ielts-writing-task2': ieltsWritingTask2SubModules,
     'ielts-speaking': ieltsSpeakingSubModules,
-    'ielts-practice-tests': ieltsPracticeTestsSubModules,
     'ielts-vocabulary': ieltsVocabularySubModules,
     'ielts-grammar': ieltsGrammarSubModules,
     'toeic-listening': toeicListeningSubModules,
@@ -381,7 +370,6 @@ export const getModuleSubModules = (moduleId: string): SubModule[] => {
     'toeic-grammar': toeicGrammarSubModules,
     'toeic-phrases-idioms': toeicPhrasesIdiomsSubModules,
     'toeic-writing': toeicWritingSubModules,
-    'toeic-practice-tests': toeicPracticeTestsSubModules,
   };
   return subModulesMap[moduleId] || [];
 };
@@ -392,32 +380,51 @@ export const getModulesByExamType = (examType: string) => {
   return ieltsModules;
 };
 
-// Convenience exports for MaterialsPage
-export const listeningSubModules = ieltsListeningSubModules;
-export const readingSubModules = ieltsReadingSubModules;
-export const writingTask1SubModules = ieltsWritingTask1SubModules;
-export const writingTask2SubModules = ieltsWritingTask2SubModules;
-export const speakingSubModules = ieltsSpeakingSubModules;
-export const practiceTestsSubModules = ieltsPracticeTestsSubModules;
-export const vocabularySubModules = ieltsVocabularySubModules;
-export const grammarSubModules = ieltsGrammarSubModules;
 
-// Function to get tasks by sub-module type
 export const getTasksBySubModuleType = (subModuleType: string) => {
-  const subModuleMap: Record<string, any> = {
-    'listening': listeningSubModules,
-    'reading': readingSubModules,
-    'writing-task1': writingTask1SubModules,
-    'writing-task2': writingTask2SubModules,
-    'speaking': speakingSubModules,
-    'practice-tests': practiceTestsSubModules,
-    'vocabulary': vocabularySubModules,
-    'grammar': grammarSubModules,
-    // TOEIC modules
+  const subModuleMap: Record<string, SubModule[]> = {
+    'listening': ieltsListeningSubModules,
+    'reading': ieltsReadingSubModules,
+    'writing-task1': ieltsWritingTask1SubModules,
+    'writing-task2': ieltsWritingTask2SubModules,
+    'speaking': ieltsSpeakingSubModules,
+    'vocabulary': ieltsVocabularySubModules,
+    'grammar': ieltsGrammarSubModules,
     'toeic-listening': toeicListeningSubModules,
     'toeic-reading': toeicReadingSubModules,
     'toeic-vocabulary': toeicVocabularySubModules,
-    'toeic-practice-tests': toeicPracticeTestsSubModules,
+    'toeic-grammar': toeicGrammarSubModules,
+    'toeic-phrases-idioms': toeicPhrasesIdiomsSubModules,
+    'toeic-writing': toeicWritingSubModules,
   };
   return subModuleMap[subModuleType] || [];
 };
+
+/*
+
+export const getTasksBySubModuleType = (subModuleType: string) => {
+  // This function should return Task[] not SubModule[]
+  // For now, return mock tasks based on the submodule
+  // You'll need to create actual task data later
+  return [];
+};
+
+export const generateTasksFromSubModule = (subModule: SubModule) => {
+  // Generate mock tasks based on totalItems
+  const tasks = [];
+  for (let i = 1; i <= subModule.totalItems; i++) {
+    tasks.push({
+      id: `${subModule.id}-task-${i}`,
+      moduleId: subModule.id.split('-')[0] + '-' + subModule.id.split('-')[1], // e.g., "ielts-listening"
+      subModuleId: subModule.id,
+      title: `${subModule.title} - Task ${i}`,
+      description: `Practice task ${i} for ${subModule.title}`,
+      difficulty: i <= subModule.totalItems / 3 ? 'easy' : i <= (2 * subModule.totalItems) / 3 ? 'medium' : 'hard',
+      questionType: subModule.questionType,
+      isCompleted: false,
+    });
+  }
+  return tasks;
+};
+
+*/

@@ -3,11 +3,11 @@ import { ArrowLeft } from 'lucide-react';
 import { DashboardLayout } from '@/components/layout/DashboardLayout';
 import { SubModuleList } from '@/components/module/SubModuleList';
 import { Button } from '@/components/ui/button';
-import { listeningSubModules } from '@/data/examData';
-import { ieltsModules, toeicModules } from '@/data/examData';
+import { getModuleSubModules, ieltsModules, toeicModules } from '@/data/examData';
 
 const MaterialsPage = () => {
   const { examType, skill } = useParams<{ examType: string; skill: string }>();
+  
   const modules = examType === 'ielts' ? ieltsModules : toeicModules;
   const currentModule = modules.find(m => m.skill === skill);
 
@@ -23,6 +23,9 @@ const MaterialsPage = () => {
       </DashboardLayout>
     );
   }
+
+  // Get the correct submodules based on the module ID
+  const subModules = getModuleSubModules(currentModule.id);
 
   return (
     <DashboardLayout>
@@ -51,9 +54,9 @@ const MaterialsPage = () => {
         </div>
       </div>
 
-      {/* Sub-modules */}
+      {/* Sub-modules - NOW DYNAMIC! */}
       <SubModuleList 
-        subModules={listeningSubModules} 
+        subModules={subModules} 
         examType={examType || 'ielts'} 
         skill={skill || 'listening'} 
       />
