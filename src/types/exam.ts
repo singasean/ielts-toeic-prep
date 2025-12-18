@@ -1,13 +1,13 @@
 // Skill types for different modules
-export type SkillType = 
-  | 'listening' 
-  | 'reading' 
-  | 'writing-task1' 
-  | 'writing-task2' 
+export type SkillType =
+  | 'listening'
+  | 'reading'
+  | 'writing-task1'
+  | 'writing-task2'
   | 'writing'
-  | 'speaking' 
-  | 'practice-tests' 
-  | 'vocabulary' 
+  | 'speaking'
+  | 'practice-tests'
+  | 'vocabulary'
   | 'grammar'
   | 'writing-feedback'
   | 'speaking-feedback'
@@ -37,11 +37,11 @@ export type QuestionType =
   | 'identify-views';
 
 // Sub-module types
-export type SubModuleType = 
-  | 'overview' 
-  | 'question-type' 
-  | 'task-type' 
-  | 'essay-type' 
+export type SubModuleType =
+  | 'overview'
+  | 'question-type'
+  | 'task-type'
+  | 'essay-type'
   | 'speaking-part'
   | 'practice-test'
   | 'vocabulary'
@@ -49,6 +49,9 @@ export type SubModuleType =
 
 // Exam types
 export type ExamType = 'ielts' | 'toeic' | 'hsk';
+
+// IELTS Band type
+export type IELTSBand = 1.0 | 1.5 | 2.0 | 2.5 | 3.0 | 3.5 | 4.0 | 4.5 | 5.0 | 5.5 | 6.0 | 6.5 | 7.0 | 7.5 | 8.0 | 8.5 | 9.0;
 
 // Sub-module interface
 export interface SubModule {
@@ -100,4 +103,11 @@ export interface HSKLevel {
   level: number;
   title: string;
   skills: string[];
+}
+
+// IELTS Level interface
+export interface IELTSLevel {
+  band: IELTSBand;
+  title: string;
+  description: string;
 }

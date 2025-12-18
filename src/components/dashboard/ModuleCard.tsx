@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import { Module } from '@/types/exam';
 import { cn } from '@/lib/utils';
+import { useExam } from '@/contexts/ExamContext'; // ADD THIS IMPORT
 
 const iconMap: Record<string, LucideIcon> = {
   Headphones,
@@ -32,12 +33,13 @@ interface ModuleCardProps {
 }
 
 export const ModuleCard = ({ module, index }: ModuleCardProps) => {
+  const { examType } = useExam(); // GET examType from context
   const Icon = iconMap[module.icon] || BookOpen;
   const progressPercent = Math.round((module.completedTasks / module.totalTasks) * 100);
 
   return (
     <Link 
-      to={`/materials/${module.examType}/${module.skill}`}
+      to={`/materials/${examType}/${module.skill}`}  // USE examType from context
       className={cn(
         "group block bg-card rounded-xl border border-border p-6 card-hover opacity-0 animate-slide-up",
         `stagger-${(index % 6) + 1}`

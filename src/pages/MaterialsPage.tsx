@@ -3,12 +3,22 @@ import { ArrowLeft } from 'lucide-react';
 import { DashboardLayout } from '@/components/layout/DashboardLayout';
 import { SubModuleList } from '@/components/module/SubModuleList';
 import { Button } from '@/components/ui/button';
-import { getModuleSubModules, ieltsModules, toeicModules } from '@/data/examData';
+import { getModuleSubModules, ieltsModules, toeicModules, hskModules } from '@/data/examData';
+import { useExam } from '@/contexts/ExamContext';
 
 const MaterialsPage = () => {
   const { examType, skill } = useParams<{ examType: string; skill: string }>();
+  const { examType: contextExamType } = useExam();
   
-  const modules = examType === 'ielts' ? ieltsModules : toeicModules;
+  // Determine which exam type to use
+  const currentExamType = examType || contextExamType;
+  
+  // Get modules based on exam type
+  const modules = 
+    currentExamType === 'ielts' ? ieltsModules : 
+    currentExamType === 'toeic' ? toeicModules : 
+    hskModules;
+    
   const currentModule = modules.find(m => m.skill === skill);
 
   if (!currentModule) {
@@ -24,8 +34,17 @@ const MaterialsPage = () => {
     );
   }
 
-  // Get the correct submodules based on the module ID
-  const subModules = getModuleSubModules(currentModule.id);
+  // Get the current band/level (default to 1.0 for IELTS, 1 for HSK)
+  // You can get this from URL params or localStorage
+  const ieltsBand = 1.0; // This should come from context or URL params
+  const hskLevel = 1;
+
+  // Get the correct submodules based on the module ID and band/level
+  const subModules = getModuleSubModules(
+    currentModule.id, 
+    currentExamType === 'ielts' ? ieltsBand : undefined,
+    currentExamType === 'hsk' ? hskLevel : undefined
+  );
 
   return (
     <DashboardLayout>
@@ -38,7 +57,7 @@ const MaterialsPage = () => {
           </Link>
         </Button>
         <span className="text-muted-foreground">/</span>
-        <span className="text-sm text-muted-foreground uppercase">{examType}</span>
+        <span className="text-sm text-muted-foreground uppercase">{currentExamType}</span>
         <span className="text-muted-foreground">/</span>
         <span className="text-sm font-medium text-foreground">{currentModule.title}</span>
       </div>
@@ -49,15 +68,22 @@ const MaterialsPage = () => {
         <p className="text-muted-foreground">{currentModule.description}</p>
         <div className="flex items-center gap-4 mt-4 text-sm">
           <span className="text-muted-foreground">
-            {currentModule.totalTasks} total tasks
+            {subModules.length > 0 
+              ? `${subModules.reduce((sum, sm) => sum + sm.totalItems, 0)} total tasks` 
+              : `${currentModule.totalTasks} total tasks`}
           </span>
+          {currentExamType === 'ielts' && (
+            <span className="text-primary font-medium">
+              Band {ieltsBand.toFixed(1)}
+            </span>
+          )}
         </div>
       </div>
 
       {/* Sub-modules - NOW DYNAMIC! */}
       <SubModuleList 
         subModules={subModules} 
-        examType={examType || 'ielts'} 
+        examType={currentExamType || 'ielts'} 
         skill={skill || 'listening'} 
       />
     </DashboardLayout>

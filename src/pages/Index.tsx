@@ -4,16 +4,22 @@ import { ExamTypeSwitch } from '@/components/dashboard/ExamTypeSwitch';
 import { ModuleGrid } from '@/components/dashboard/ModuleGrid';
 import { WelcomeBanner } from '@/components/dashboard/WelcomeBanner';
 import { HSKLevelSelector } from '@/components/dashboard/HSKLevelSelector';
+import { IELTSBandSelector } from '@/components/dashboard/IELTSBandSelector';
 import { useExam } from '@/contexts/ExamContext';
 
 const Index = () => {
   const { examType } = useExam();
-    const [hskLevel, setHskLevel] = useState<number>(1);
+  const [hskLevel, setHskLevel] = useState<number>(1);
+  const [ieltsBand, setIeltsBand] = useState<number>(1.0); // Changed from 5.0 to 1.0
 
   return (
     <DashboardLayout>
       <WelcomeBanner />
-              <HSKLevelSelector  onLevelChange={setHskLevel} />
+      <HSKLevelSelector onLevelChange={setHskLevel} />
+      <IELTSBandSelector 
+        selectedBand={ieltsBand}
+        onBandChange={setIeltsBand} 
+      />
       
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
         <div>
@@ -25,7 +31,7 @@ const Index = () => {
         <ExamTypeSwitch />
       </div>
 
-      <ModuleGrid hskLevel={hskLevel} />
+      <ModuleGrid hskLevel={hskLevel} ieltsBand={ieltsBand} />
     </DashboardLayout>
   );
 };
