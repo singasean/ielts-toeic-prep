@@ -634,6 +634,7 @@ export const ieltsModules = [
     totalTasks: 40,
     completedTasks: 0,
     bgGradient: 'from-blue-500 to-blue-700',
+    examType: 'ielts' as const,
   },
   {
     id: 'ielts-reading',
@@ -644,6 +645,7 @@ export const ieltsModules = [
     totalTasks: 40,
     completedTasks: 0,
     bgGradient: 'from-green-500 to-green-700',
+    examType: 'ielts' as const,
   },
   {
     id: 'ielts-writing',
@@ -654,6 +656,7 @@ export const ieltsModules = [
     totalTasks: 20,
     completedTasks: 0,
     bgGradient: 'from-purple-500 to-purple-700',
+    examType: 'ielts' as const,
   },
   {
     id: 'ielts-speaking',
@@ -664,6 +667,7 @@ export const ieltsModules = [
     totalTasks: 30,
     completedTasks: 0,
     bgGradient: 'from-pink-500 to-pink-700',
+    examType: 'ielts' as const,
   },
 ];
 
@@ -679,6 +683,7 @@ export const toeicModules = [
     totalTasks: 100,
     completedTasks: 0,
     bgGradient: 'from-blue-500 to-blue-700',
+    examType: 'toeic' as const,
   },
   {
     id: 'toeic-reading',
@@ -689,6 +694,7 @@ export const toeicModules = [
     totalTasks: 100,
     completedTasks: 0,
     bgGradient: 'from-green-500 to-green-700',
+    examType: 'toeic' as const,
   },
 ];
 
@@ -702,6 +708,7 @@ export const hskModules = [
     totalTasks: 45,
     completedTasks: 0,
     bgGradient: 'from-blue-500 to-blue-700',
+    examType: 'hsk' as const,
   },
   {
     id: 'hsk-reading',
@@ -712,6 +719,7 @@ export const hskModules = [
     totalTasks: 45,
     completedTasks: 0,
     bgGradient: 'from-green-500 to-green-700',
+    examType: 'hsk' as const,
   },
   {
     id: 'hsk-writing',
@@ -722,6 +730,7 @@ export const hskModules = [
     totalTasks: 30,
     completedTasks: 0,
     bgGradient: 'from-purple-500 to-purple-700',
+    examType: 'hsk' as const,
   },
 ];
 

@@ -11,24 +11,31 @@ import {
   MessageSquare,
   LucideIcon
 } from 'lucide-react';
-import { Module } from '@/types/exam';
 import { cn } from '@/lib/utils';
-import { useExam } from '@/contexts/ExamContext'; // ADD THIS IMPORT
+import { useExam } from '@/contexts/ExamContext';
 
 const iconMap: Record<string, LucideIcon> = {
-  Headphones,
-  BookOpen,
-  PenTool,
-  FileText,
-  Mic,
-  ClipboardList,
-  Book,
-  GraduationCap,
-  MessageSquare,
+  headphones: Headphones,
+  'book-open': BookOpen,
+  edit: PenTool,
+  'file-text': FileText,
+  mic: Mic,
+  clipboard: ClipboardList,
+  book: Book,
+  graduation: GraduationCap,
+  message: MessageSquare,
 };
 
 interface ModuleCardProps {
-  module: Module;
+  module: {
+    id: string;
+    title: string;
+    description: string;
+    icon: string;
+    skill: string;
+    totalTasks: number;
+    completedTasks: number;
+  };
   index: number;
 }
 
