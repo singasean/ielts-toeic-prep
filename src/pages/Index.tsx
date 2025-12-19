@@ -11,7 +11,7 @@ const Index = () => {
   const { examType } = useExam();
   const [hskLevel, setHskLevel] = useState<number>(1);
   const [ieltsBand, setIeltsBand] = useState<number>(1.0); // Changed from 5.0 to 1.0
-  //oooooo
+
   return (
     <DashboardLayout>
       <WelcomeBanner />
