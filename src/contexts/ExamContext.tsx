@@ -1,6 +1,8 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
-import { ExamType, Module, TaskStatus } from '@/types/exam';
+import { ExamType } from '@/types/exam';
 import { ieltsModules, toeicModules, hskModules } from '@/data/examData';
+
+type TaskStatus = 'not-started' | 'in-progress' | 'completed';
 
 interface Progress {
   [moduleId: string]: {
@@ -8,10 +10,12 @@ interface Progress {
   };
 }
 
+type ModuleType = typeof ieltsModules[number] | typeof toeicModules[number] | typeof hskModules[number];
+
 interface ExamContextType {
   examType: ExamType;
   setExamType: (type: ExamType) => void;
-  modules: Module[];
+  modules: ModuleType[];
   progress: Progress;
   updateTaskProgress: (moduleId: string, taskId: string, status: TaskStatus) => void;
   getModuleProgress: (moduleId: string) => number;

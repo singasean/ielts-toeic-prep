@@ -2,10 +2,14 @@
 
 import React, { useState } from 'react';
 import { useExam } from '@/contexts/ExamContext';
-import { HSK_LEVELS, getHskSubModulesByLevel } from '@/data/examData';
+import { HSK_LEVELS } from '@/data/examData';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
-export const HSKLevelSelector: React.FC = ({ onLevelChange }: { onLevelChange?: (level: number) => void }) => {
+interface HSKLevelSelectorProps {
+  onLevelChange?: (level: number) => void;
+}
+
+export const HSKLevelSelector: React.FC<HSKLevelSelectorProps> = ({ onLevelChange }) => {
   const { examType } = useExam();
   const [selectedLevel, setSelectedLevel] = useState<number>(1);
 

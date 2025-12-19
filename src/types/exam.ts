@@ -75,17 +75,22 @@ export interface Module {
   examType: ExamType;
 }
 
+// Task status type
+export type TaskStatus = 'not-started' | 'in-progress' | 'completed';
+
 // Task interface
 export interface Task {
   id: string;
-  moduleId: string;
   subModuleId: string;
-  title: string;
-  description: string;
-  difficulty: 'beginner' | 'intermediate' | 'advanced';
-  estimatedTime: number; // in minutes
-  completed: boolean;
-  score?: number;
+  questionType: string;
+  question: string;
+  options?: string[];
+  correctAnswer: string | string[];
+  explanation?: string;
+  difficulty: 'easy' | 'medium' | 'hard';
+  status?: TaskStatus;
+  questionCount?: number;
+  title?: string;
 }
 
 // User progress interface
