@@ -3,12 +3,12 @@ import { ArrowLeft } from 'lucide-react';
 import { DashboardLayout } from '@/components/layout/DashboardLayout';
 import { SubModuleList } from '@/components/module/SubModuleList';
 import { Button } from '@/components/ui/button';
-import { getModuleSubModules, ieltsModules, toeicModules, hskModules } from '@/data/examData';
+import { getModuleSubModules, ieltsModules, toeicModules, hskModules, getCEFRBandRange } from '@/data/examData';
 import { useExam } from '@/contexts/ExamContext';
 
 const MaterialsPage = () => {
   const { examType, skill } = useParams<{ examType: string; skill: string }>();
-  const { examType: contextExamType } = useExam();
+  const { examType: contextExamType, ieltsBand, hskLevel, cefrLevel } = useExam();
   
   // Determine which exam type to use
   const currentExamType = examType || contextExamType;
@@ -34,17 +34,14 @@ const MaterialsPage = () => {
     );
   }
 
-  // Get the current band/level (default to 1.0 for IELTS, 1 for HSK)
-  // You can get this from URL params or localStorage
-  const ieltsBand = 1.0; // This should come from context or URL params
-  const hskLevel = 1;
-
-  // Get the correct submodules based on the module ID and band/level
+  // Get the correct submodules based on the module ID and band/level from context
   const subModules = getModuleSubModules(
     currentModule.id, 
     currentExamType === 'ielts' ? ieltsBand : undefined,
     currentExamType === 'hsk' ? hskLevel : undefined
   );
+
+  const bandRange = getCEFRBandRange(cefrLevel);
 
   return (
     <DashboardLayout>
@@ -74,7 +71,12 @@ const MaterialsPage = () => {
           </span>
           {currentExamType === 'ielts' && (
             <span className="text-primary font-medium">
-              Band {ieltsBand.toFixed(1)}
+              {cefrLevel} Level (Band {bandRange.min} - {bandRange.max})
+            </span>
+          )}
+          {currentExamType === 'hsk' && (
+            <span className="text-primary font-medium">
+              HSK {hskLevel}
             </span>
           )}
         </div>

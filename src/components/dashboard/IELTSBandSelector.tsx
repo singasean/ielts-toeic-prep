@@ -1,5 +1,5 @@
-import { useExam } from '@/contexts/ExamContext';
-import { IELTS_LEVELS, getIeltsBandLabel } from '@/data/examData';
+import { useExam, CEFRLevel } from '@/contexts/ExamContext';
+import { CEFR_LEVELS, getCEFRBandRange } from '@/data/examData';
 import {
   Select,
   SelectContent,
@@ -8,15 +8,12 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 
-interface IELTSBandSelectorProps {
-  selectedBand?: number;  // Add this
-  onBandChange: (band: number) => void;
-}
-
-export const IELTSBandSelector = ({ selectedBand = 1.0, onBandChange }: IELTSBandSelectorProps) => {
-  const { examType } = useExam();
+export const IELTSBandSelector = () => {
+  const { examType, cefrLevel, setCefrLevel } = useExam();
 
   if (examType !== 'ielts') return null;
+
+  const currentRange = getCEFRBandRange(cefrLevel);
 
   return (
     <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg p-6 mb-6">
@@ -25,24 +22,24 @@ export const IELTSBandSelector = ({ selectedBand = 1.0, onBandChange }: IELTSBan
           <h3 className="text-xl font-semibold text-white mb-2">
             IELTS Band Selection
           </h3>
-          <p className="text-purple-100">Choose your target IELTS band score</p>
+          <p className="text-purple-100">Choose your target CEFR level</p>
           <div className="mt-2 text-purple-100">
-            📚 Band {selectedBand.toFixed(1)} - listening, reading, writing, speaking
+            📚 {cefrLevel} Level (Band {currentRange.min} - {currentRange.max}) - listening, reading, writing, speaking
           </div>
         </div>
         <div className="flex items-center gap-3">
-          <span className="text-white font-medium">Band:</span>
+          <span className="text-white font-medium">Level:</span>
           <Select
-            value={selectedBand.toString()}
-            onValueChange={(value) => onBandChange(parseFloat(value))}
+            value={cefrLevel}
+            onValueChange={(value) => setCefrLevel(value as CEFRLevel)}
           >
             <SelectTrigger className="w-[180px] bg-white">
-              <SelectValue placeholder="Select band" />
+              <SelectValue placeholder="Select level" />
             </SelectTrigger>
             <SelectContent>
-              {IELTS_LEVELS.map((level) => (
-                <SelectItem key={level.band} value={level.band.toString()}>
-                  {getIeltsBandLabel(level.band)}
+              {CEFR_LEVELS.map((level) => (
+                <SelectItem key={level.code} value={level.code}>
+                  {level.label}
                 </SelectItem>
               ))}
             </SelectContent>

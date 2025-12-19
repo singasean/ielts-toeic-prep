@@ -39,22 +39,31 @@ const ieltsBand1_0ListeningSubModules = [
 ];
 
 const ieltsBand1_0ReadingSubModules = [
-  { id: 'ielts-1.0-reading-form-note', title: 'Form/Note Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-1.0-reading-short-answer', title: 'Short-Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
   { id: 'ielts-1.0-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-1.0-reading-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-1.0-reading-multiple-answers', title: 'Multiple Choice (Multiple answers)', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-1.0-reading-summary', title: 'Summary Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-1.0-reading-sentence', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-1.0-reading-table-flow', title: 'Table/Flow-Chart Completion', type: 'question-type', questionType: 'table-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.0-reading-tfng', title: 'TFNG', type: 'question-type', questionType: 'true-false-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.0-reading-ynng', title: 'YNNG (GT)', type: 'question-type', questionType: 'yes-no-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.0-reading-matching-headings', title: 'Matching Headings', type: 'question-type', questionType: 'matching-headings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.0-reading-matching-information', title: 'Matching Information', type: 'question-type', questionType: 'matching-information', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.0-reading-matching-features', title: 'Matching Features', type: 'question-type', questionType: 'matching-features', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.0-reading-matching-sentence-endings', title: 'Matching Sentence Endings', type: 'question-type', questionType: 'matching-sentence-endings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.0-reading-summary-note-table-flow', title: 'Summary/Note/Table/Flow-Chart Completion', type: 'question-type', questionType: 'summary-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.0-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.0-reading-diagram-label', title: 'Diagram/Label Completion', type: 'question-type', questionType: 'diagram-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.0-reading-short-answer', title: 'Short-Answer Questions', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand1_0WritingSubModules = [
-  { id: 'ielts-1.0-writing-words', title: 'Write Simple Words', type: 'task-type', questionType: 'short-answer', totalItems: 5, completedItems: 0 },
+  { id: 'ielts-1.0-writing-graph-chart', title: 'Graph/Chart Description', type: 'task-type', questionType: 'graph-chart-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.0-writing-process-diagram', title: 'Process Diagram', type: 'task-type', questionType: 'process-diagram', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.0-writing-map', title: 'Map', type: 'task-type', questionType: 'map-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.0-writing-letter', title: 'Letter Writing', type: 'task-type', questionType: 'letter-writing', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.0-writing-essay', title: 'Essay', type: 'essay-type', questionType: 'essay-writing', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand1_0SpeakingSubModules = [
-  { id: 'ielts-1.0-speaking-greetings', title: 'Basic Greetings', type: 'speaking-part', questionType: 'short-answer', totalItems: 5, completedItems: 0 },
+  { id: 'ielts-1.0-speaking-intro-interview', title: 'Intro & Interview', type: 'speaking-part', questionType: 'intro-interview', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.0-speaking-long-turn', title: 'Long Turn', type: 'speaking-part', questionType: 'long-turn', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.0-speaking-discussion', title: 'Discussion', type: 'speaking-part', questionType: 'discussion', totalItems: 10, completedItems: 0 },
 ];
 
 // Band 1.5
@@ -70,22 +79,31 @@ const ieltsBand1_5ListeningSubModules = [
 ];
 
 const ieltsBand1_5ReadingSubModules = [
-  { id: 'ielts-1.5-reading-form-note', title: 'Form/Note Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-1.5-reading-short-answer', title: 'Short-Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
   { id: 'ielts-1.5-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-1.5-reading-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-1.5-reading-multiple-answers', title: 'Multiple Choice (Multiple answers)', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-1.5-reading-summary', title: 'Summary Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-1.5-reading-sentence', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-1.5-reading-table-flow', title: 'Table/Flow-Chart Completion', type: 'question-type', questionType: 'table-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.5-reading-tfng', title: 'TFNG', type: 'question-type', questionType: 'true-false-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.5-reading-ynng', title: 'YNNG (GT)', type: 'question-type', questionType: 'yes-no-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.5-reading-matching-headings', title: 'Matching Headings', type: 'question-type', questionType: 'matching-headings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.5-reading-matching-information', title: 'Matching Information', type: 'question-type', questionType: 'matching-information', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.5-reading-matching-features', title: 'Matching Features', type: 'question-type', questionType: 'matching-features', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.5-reading-matching-sentence-endings', title: 'Matching Sentence Endings', type: 'question-type', questionType: 'matching-sentence-endings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.5-reading-summary-note-table-flow', title: 'Summary/Note/Table/Flow-Chart Completion', type: 'question-type', questionType: 'summary-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.5-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.5-reading-diagram-label', title: 'Diagram/Label Completion', type: 'question-type', questionType: 'diagram-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.5-reading-short-answer', title: 'Short-Answer Questions', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand1_5WritingSubModules = [
-  { id: 'ielts-1.5-writing-sentences', title: 'Simple Sentences', type: 'task-type', questionType: 'short-answer', totalItems: 6, completedItems: 0 },
+  { id: 'ielts-1.5-writing-graph-chart', title: 'Graph/Chart Description', type: 'task-type', questionType: 'graph-chart-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.5-writing-process-diagram', title: 'Process Diagram', type: 'task-type', questionType: 'process-diagram', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.5-writing-map', title: 'Map', type: 'task-type', questionType: 'map-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.5-writing-letter', title: 'Letter Writing', type: 'task-type', questionType: 'letter-writing', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.5-writing-essay', title: 'Essay', type: 'essay-type', questionType: 'essay-writing', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand1_5SpeakingSubModules = [
-  { id: 'ielts-1.5-speaking-intro', title: 'Self Introduction', type: 'speaking-part', questionType: 'short-answer', totalItems: 6, completedItems: 0 },
+  { id: 'ielts-1.5-speaking-intro-interview', title: 'Intro & Interview', type: 'speaking-part', questionType: 'intro-interview', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.5-speaking-long-turn', title: 'Long Turn', type: 'speaking-part', questionType: 'long-turn', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-1.5-speaking-discussion', title: 'Discussion', type: 'speaking-part', questionType: 'discussion', totalItems: 10, completedItems: 0 },
 ];
 
 // Band 2.0
@@ -101,22 +119,31 @@ const ieltsBand2_0ListeningSubModules = [
 ];
 
 const ieltsBand2_0ReadingSubModules = [
-  { id: 'ielts-2.0-reading-form-note', title: 'Form/Note Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-2.0-reading-short-answer', title: 'Short-Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
   { id: 'ielts-2.0-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-2.0-reading-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-2.0-reading-multiple-answers', title: 'Multiple Choice (Multiple answers)', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-2.0-reading-summary', title: 'Summary Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-2.0-reading-sentence', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-2.0-reading-table-flow', title: 'Table/Flow-Chart Completion', type: 'question-type', questionType: 'table-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.0-reading-tfng', title: 'TFNG', type: 'question-type', questionType: 'true-false-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.0-reading-ynng', title: 'YNNG (GT)', type: 'question-type', questionType: 'yes-no-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.0-reading-matching-headings', title: 'Matching Headings', type: 'question-type', questionType: 'matching-headings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.0-reading-matching-information', title: 'Matching Information', type: 'question-type', questionType: 'matching-information', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.0-reading-matching-features', title: 'Matching Features', type: 'question-type', questionType: 'matching-features', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.0-reading-matching-sentence-endings', title: 'Matching Sentence Endings', type: 'question-type', questionType: 'matching-sentence-endings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.0-reading-summary-note-table-flow', title: 'Summary/Note/Table/Flow-Chart Completion', type: 'question-type', questionType: 'summary-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.0-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.0-reading-diagram-label', title: 'Diagram/Label Completion', type: 'question-type', questionType: 'diagram-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.0-reading-short-answer', title: 'Short-Answer Questions', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand2_0WritingSubModules = [
-  { id: 'ielts-2.0-writing-paragraph', title: 'Short Paragraphs', type: 'task-type', questionType: 'short-answer', totalItems: 6, completedItems: 0 },
+  { id: 'ielts-2.0-writing-graph-chart', title: 'Graph/Chart Description', type: 'task-type', questionType: 'graph-chart-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.0-writing-process-diagram', title: 'Process Diagram', type: 'task-type', questionType: 'process-diagram', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.0-writing-map', title: 'Map', type: 'task-type', questionType: 'map-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.0-writing-letter', title: 'Letter Writing', type: 'task-type', questionType: 'letter-writing', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.0-writing-essay', title: 'Essay', type: 'essay-type', questionType: 'essay-writing', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand2_0SpeakingSubModules = [
-  { id: 'ielts-2.0-speaking-personal', title: 'Personal Information', type: 'speaking-part', questionType: 'short-answer', totalItems: 8, completedItems: 0 },
+  { id: 'ielts-2.0-speaking-intro-interview', title: 'Intro & Interview', type: 'speaking-part', questionType: 'intro-interview', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.0-speaking-long-turn', title: 'Long Turn', type: 'speaking-part', questionType: 'long-turn', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.0-speaking-discussion', title: 'Discussion', type: 'speaking-part', questionType: 'discussion', totalItems: 10, completedItems: 0 },
 ];
 
 // Band 2.5
@@ -132,22 +159,31 @@ const ieltsBand2_5ListeningSubModules = [
 ];
 
 const ieltsBand2_5ReadingSubModules = [
-  { id: 'ielts-2.5-reading-form-note', title: 'Form/Note Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-2.5-reading-short-answer', title: 'Short-Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
   { id: 'ielts-2.5-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-2.5-reading-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-2.5-reading-multiple-answers', title: 'Multiple Choice (Multiple answers)', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-2.5-reading-summary', title: 'Summary Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-2.5-reading-sentence', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-2.5-reading-table-flow', title: 'Table/Flow-Chart Completion', type: 'question-type', questionType: 'table-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.5-reading-tfng', title: 'TFNG', type: 'question-type', questionType: 'true-false-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.5-reading-ynng', title: 'YNNG (GT)', type: 'question-type', questionType: 'yes-no-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.5-reading-matching-headings', title: 'Matching Headings', type: 'question-type', questionType: 'matching-headings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.5-reading-matching-information', title: 'Matching Information', type: 'question-type', questionType: 'matching-information', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.5-reading-matching-features', title: 'Matching Features', type: 'question-type', questionType: 'matching-features', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.5-reading-matching-sentence-endings', title: 'Matching Sentence Endings', type: 'question-type', questionType: 'matching-sentence-endings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.5-reading-summary-note-table-flow', title: 'Summary/Note/Table/Flow-Chart Completion', type: 'question-type', questionType: 'summary-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.5-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.5-reading-diagram-label', title: 'Diagram/Label Completion', type: 'question-type', questionType: 'diagram-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.5-reading-short-answer', title: 'Short-Answer Questions', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand2_5WritingSubModules = [
-  { id: 'ielts-2.5-writing-describe', title: 'Describe Simple Things', type: 'task-type', questionType: 'short-answer', totalItems: 8, completedItems: 0 },
+  { id: 'ielts-2.5-writing-graph-chart', title: 'Graph/Chart Description', type: 'task-type', questionType: 'graph-chart-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.5-writing-process-diagram', title: 'Process Diagram', type: 'task-type', questionType: 'process-diagram', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.5-writing-map', title: 'Map', type: 'task-type', questionType: 'map-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.5-writing-letter', title: 'Letter Writing', type: 'task-type', questionType: 'letter-writing', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.5-writing-essay', title: 'Essay', type: 'essay-type', questionType: 'essay-writing', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand2_5SpeakingSubModules = [
-  { id: 'ielts-2.5-speaking-topics', title: 'Familiar Topics', type: 'speaking-part', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.5-speaking-intro-interview', title: 'Intro & Interview', type: 'speaking-part', questionType: 'intro-interview', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.5-speaking-long-turn', title: 'Long Turn', type: 'speaking-part', questionType: 'long-turn', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-2.5-speaking-discussion', title: 'Discussion', type: 'speaking-part', questionType: 'discussion', totalItems: 10, completedItems: 0 },
 ];
 
 // Band 3.0
@@ -163,24 +199,31 @@ const ieltsBand3_0ListeningSubModules = [
 ];
 
 const ieltsBand3_0ReadingSubModules = [
-  { id: 'ielts-3.0-reading-form-note', title: 'Form/Note Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-3.0-reading-short-answer', title: 'Short-Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
   { id: 'ielts-3.0-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-3.0-reading-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-3.0-reading-multiple-answers', title: 'Multiple Choice (Multiple answers)', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-3.0-reading-summary', title: 'Summary Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-3.0-reading-sentence', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-3.0-reading-table-flow', title: 'Table/Flow-Chart Completion', type: 'question-type', questionType: 'table-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.0-reading-tfng', title: 'TFNG', type: 'question-type', questionType: 'true-false-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.0-reading-ynng', title: 'YNNG (GT)', type: 'question-type', questionType: 'yes-no-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.0-reading-matching-headings', title: 'Matching Headings', type: 'question-type', questionType: 'matching-headings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.0-reading-matching-information', title: 'Matching Information', type: 'question-type', questionType: 'matching-information', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.0-reading-matching-features', title: 'Matching Features', type: 'question-type', questionType: 'matching-features', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.0-reading-matching-sentence-endings', title: 'Matching Sentence Endings', type: 'question-type', questionType: 'matching-sentence-endings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.0-reading-summary-note-table-flow', title: 'Summary/Note/Table/Flow-Chart Completion', type: 'question-type', questionType: 'summary-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.0-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.0-reading-diagram-label', title: 'Diagram/Label Completion', type: 'question-type', questionType: 'diagram-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.0-reading-short-answer', title: 'Short-Answer Questions', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand3_0WritingSubModules = [
-  { id: 'ielts-3.0-writing-task1-basic', title: 'Task 1: Basic Descriptions', type: 'task-type', questionType: 'short-answer', totalItems: 8, completedItems: 0 },
-  { id: 'ielts-3.0-writing-task2-basic', title: 'Task 2: Simple Opinions', type: 'essay-type', questionType: 'short-answer', totalItems: 8, completedItems: 0 },
+  { id: 'ielts-3.0-writing-graph-chart', title: 'Graph/Chart Description', type: 'task-type', questionType: 'graph-chart-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.0-writing-process-diagram', title: 'Process Diagram', type: 'task-type', questionType: 'process-diagram', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.0-writing-map', title: 'Map', type: 'task-type', questionType: 'map-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.0-writing-letter', title: 'Letter Writing', type: 'task-type', questionType: 'letter-writing', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.0-writing-essay', title: 'Essay', type: 'essay-type', questionType: 'essay-writing', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand3_0SpeakingSubModules = [
-  { id: 'ielts-3.0-speaking-part1', title: 'Part 1: Introduction', type: 'speaking-part', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-3.0-speaking-part2-basic', title: 'Part 2: Basic Description', type: 'speaking-part', questionType: 'short-answer', totalItems: 8, completedItems: 0 },
+  { id: 'ielts-3.0-speaking-intro-interview', title: 'Intro & Interview', type: 'speaking-part', questionType: 'intro-interview', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.0-speaking-long-turn', title: 'Long Turn', type: 'speaking-part', questionType: 'long-turn', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.0-speaking-discussion', title: 'Discussion', type: 'speaking-part', questionType: 'discussion', totalItems: 10, completedItems: 0 },
 ];
 
 // Band 3.5
@@ -196,24 +239,31 @@ const ieltsBand3_5ListeningSubModules = [
 ];
 
 const ieltsBand3_5ReadingSubModules = [
-  { id: 'ielts-3.5-reading-form-note', title: 'Form/Note Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-3.5-reading-short-answer', title: 'Short-Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
   { id: 'ielts-3.5-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-3.5-reading-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-3.5-reading-multiple-answers', title: 'Multiple Choice (Multiple answers)', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-3.5-reading-summary', title: 'Summary Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-3.5-reading-sentence', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-3.5-reading-table-flow', title: 'Table/Flow-Chart Completion', type: 'question-type', questionType: 'table-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.5-reading-tfng', title: 'TFNG', type: 'question-type', questionType: 'true-false-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.5-reading-ynng', title: 'YNNG (GT)', type: 'question-type', questionType: 'yes-no-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.5-reading-matching-headings', title: 'Matching Headings', type: 'question-type', questionType: 'matching-headings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.5-reading-matching-information', title: 'Matching Information', type: 'question-type', questionType: 'matching-information', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.5-reading-matching-features', title: 'Matching Features', type: 'question-type', questionType: 'matching-features', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.5-reading-matching-sentence-endings', title: 'Matching Sentence Endings', type: 'question-type', questionType: 'matching-sentence-endings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.5-reading-summary-note-table-flow', title: 'Summary/Note/Table/Flow-Chart Completion', type: 'question-type', questionType: 'summary-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.5-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.5-reading-diagram-label', title: 'Diagram/Label Completion', type: 'question-type', questionType: 'diagram-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.5-reading-short-answer', title: 'Short-Answer Questions', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand3_5WritingSubModules = [
-  { id: 'ielts-3.5-writing-task1', title: 'Task 1: Describe Data', type: 'task-type', questionType: 'short-answer', totalItems: 8, completedItems: 0 },
-  { id: 'ielts-3.5-writing-task2', title: 'Task 2: Give Opinions', type: 'essay-type', questionType: 'short-answer', totalItems: 8, completedItems: 0 },
+  { id: 'ielts-3.5-writing-graph-chart', title: 'Graph/Chart Description', type: 'task-type', questionType: 'graph-chart-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.5-writing-process-diagram', title: 'Process Diagram', type: 'task-type', questionType: 'process-diagram', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.5-writing-map', title: 'Map', type: 'task-type', questionType: 'map-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.5-writing-letter', title: 'Letter Writing', type: 'task-type', questionType: 'letter-writing', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.5-writing-essay', title: 'Essay', type: 'essay-type', questionType: 'essay-writing', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand3_5SpeakingSubModules = [
-  { id: 'ielts-3.5-speaking-part1', title: 'Part 1: Personal Questions', type: 'speaking-part', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
-  { id: 'ielts-3.5-speaking-part2', title: 'Part 2: Describe Experience', type: 'speaking-part', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.5-speaking-intro-interview', title: 'Intro & Interview', type: 'speaking-part', questionType: 'intro-interview', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.5-speaking-long-turn', title: 'Long Turn', type: 'speaking-part', questionType: 'long-turn', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-3.5-speaking-discussion', title: 'Discussion', type: 'speaking-part', questionType: 'discussion', totalItems: 10, completedItems: 0 },
 ];
 
 // Band 4.0
@@ -229,25 +279,31 @@ const ieltsBand4_0ListeningSubModules = [
 ];
 
 const ieltsBand4_0ReadingSubModules = [
-  { id: 'ielts-4.0-reading-form-note', title: 'Form/Note Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-4.0-reading-short-answer', title: 'Short-Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
   { id: 'ielts-4.0-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-4.0-reading-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-4.0-reading-multiple-answers', title: 'Multiple Choice (Multiple answers)', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-4.0-reading-summary', title: 'Summary Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-4.0-reading-sentence', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-4.0-reading-table-flow', title: 'Table/Flow-Chart Completion', type: 'question-type', questionType: 'table-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.0-reading-tfng', title: 'TFNG', type: 'question-type', questionType: 'true-false-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.0-reading-ynng', title: 'YNNG (GT)', type: 'question-type', questionType: 'yes-no-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.0-reading-matching-headings', title: 'Matching Headings', type: 'question-type', questionType: 'matching-headings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.0-reading-matching-information', title: 'Matching Information', type: 'question-type', questionType: 'matching-information', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.0-reading-matching-features', title: 'Matching Features', type: 'question-type', questionType: 'matching-features', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.0-reading-matching-sentence-endings', title: 'Matching Sentence Endings', type: 'question-type', questionType: 'matching-sentence-endings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.0-reading-summary-note-table-flow', title: 'Summary/Note/Table/Flow-Chart Completion', type: 'question-type', questionType: 'summary-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.0-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.0-reading-diagram-label', title: 'Diagram/Label Completion', type: 'question-type', questionType: 'diagram-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.0-reading-short-answer', title: 'Short-Answer Questions', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand4_0WritingSubModules = [
-  { id: 'ielts-4.0-writing-task1', title: 'Task 1: Charts & Graphs', type: 'task-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-4.0-writing-task2', title: 'Task 2: Opinion Essays', type: 'essay-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.0-writing-graph-chart', title: 'Graph/Chart Description', type: 'task-type', questionType: 'graph-chart-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.0-writing-process-diagram', title: 'Process Diagram', type: 'task-type', questionType: 'process-diagram', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.0-writing-map', title: 'Map', type: 'task-type', questionType: 'map-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.0-writing-letter', title: 'Letter Writing', type: 'task-type', questionType: 'letter-writing', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.0-writing-essay', title: 'Essay', type: 'essay-type', questionType: 'essay-writing', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand4_0SpeakingSubModules = [
-  { id: 'ielts-4.0-speaking-part1', title: 'Part 1: Familiar Topics', type: 'speaking-part', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
-  { id: 'ielts-4.0-speaking-part2', title: 'Part 2: Describe Topics', type: 'speaking-part', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-4.0-speaking-part3', title: 'Part 3: Simple Discussion', type: 'speaking-part', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.0-speaking-intro-interview', title: 'Intro & Interview', type: 'speaking-part', questionType: 'intro-interview', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.0-speaking-long-turn', title: 'Long Turn', type: 'speaking-part', questionType: 'long-turn', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.0-speaking-discussion', title: 'Discussion', type: 'speaking-part', questionType: 'discussion', totalItems: 10, completedItems: 0 },
 ];
 
 // Band 4.5
@@ -263,25 +319,31 @@ const ieltsBand4_5ListeningSubModules = [
 ];
 
 const ieltsBand4_5ReadingSubModules = [
-  { id: 'ielts-4.5-reading-form-note', title: 'Form/Note Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-4.5-reading-short-answer', title: 'Short-Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
   { id: 'ielts-4.5-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-4.5-reading-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-4.5-reading-multiple-answers', title: 'Multiple Choice (Multiple answers)', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-4.5-reading-summary', title: 'Summary Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-4.5-reading-sentence', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-4.5-reading-table-flow', title: 'Table/Flow-Chart Completion', type: 'question-type', questionType: 'table-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.5-reading-tfng', title: 'TFNG', type: 'question-type', questionType: 'true-false-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.5-reading-ynng', title: 'YNNG (GT)', type: 'question-type', questionType: 'yes-no-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.5-reading-matching-headings', title: 'Matching Headings', type: 'question-type', questionType: 'matching-headings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.5-reading-matching-information', title: 'Matching Information', type: 'question-type', questionType: 'matching-information', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.5-reading-matching-features', title: 'Matching Features', type: 'question-type', questionType: 'matching-features', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.5-reading-matching-sentence-endings', title: 'Matching Sentence Endings', type: 'question-type', questionType: 'matching-sentence-endings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.5-reading-summary-note-table-flow', title: 'Summary/Note/Table/Flow-Chart Completion', type: 'question-type', questionType: 'summary-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.5-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.5-reading-diagram-label', title: 'Diagram/Label Completion', type: 'question-type', questionType: 'diagram-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.5-reading-short-answer', title: 'Short-Answer Questions', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand4_5WritingSubModules = [
-  { id: 'ielts-4.5-writing-task1', title: 'Task 1: Visual Data', type: 'task-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-4.5-writing-task2', title: 'Task 2: Argument Essays', type: 'essay-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.5-writing-graph-chart', title: 'Graph/Chart Description', type: 'task-type', questionType: 'graph-chart-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.5-writing-process-diagram', title: 'Process Diagram', type: 'task-type', questionType: 'process-diagram', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.5-writing-map', title: 'Map', type: 'task-type', questionType: 'map-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.5-writing-letter', title: 'Letter Writing', type: 'task-type', questionType: 'letter-writing', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.5-writing-essay', title: 'Essay', type: 'essay-type', questionType: 'essay-writing', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand4_5SpeakingSubModules = [
-  { id: 'ielts-4.5-speaking-part1', title: 'Part 1: Personal Topics', type: 'speaking-part', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
-  { id: 'ielts-4.5-speaking-part2', title: 'Part 2: Extended Speaking', type: 'speaking-part', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
-  { id: 'ielts-4.5-speaking-part3', title: 'Part 3: Abstract Ideas', type: 'speaking-part', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
+  { id: 'ielts-4.5-speaking-intro-interview', title: 'Intro & Interview', type: 'speaking-part', questionType: 'intro-interview', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.5-speaking-long-turn', title: 'Long Turn', type: 'speaking-part', questionType: 'long-turn', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-4.5-speaking-discussion', title: 'Discussion', type: 'speaking-part', questionType: 'discussion', totalItems: 10, completedItems: 0 },
 ];
 
 // Band 5.0
@@ -297,25 +359,31 @@ const ieltsBand5_0ListeningSubModules = [
 ];
 
 const ieltsBand5_0ReadingSubModules = [
-  { id: 'ielts-5.0-reading-form-note', title: 'Form/Note Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-5.0-reading-short-answer', title: 'Short-Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
   { id: 'ielts-5.0-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-5.0-reading-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-5.0-reading-multiple-answers', title: 'Multiple Choice (Multiple answers)', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-5.0-reading-summary', title: 'Summary Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-5.0-reading-sentence', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-5.0-reading-table-flow', title: 'Table/Flow-Chart Completion', type: 'question-type', questionType: 'table-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.0-reading-tfng', title: 'TFNG', type: 'question-type', questionType: 'true-false-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.0-reading-ynng', title: 'YNNG (GT)', type: 'question-type', questionType: 'yes-no-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.0-reading-matching-headings', title: 'Matching Headings', type: 'question-type', questionType: 'matching-headings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.0-reading-matching-information', title: 'Matching Information', type: 'question-type', questionType: 'matching-information', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.0-reading-matching-features', title: 'Matching Features', type: 'question-type', questionType: 'matching-features', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.0-reading-matching-sentence-endings', title: 'Matching Sentence Endings', type: 'question-type', questionType: 'matching-sentence-endings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.0-reading-summary-note-table-flow', title: 'Summary/Note/Table/Flow-Chart Completion', type: 'question-type', questionType: 'summary-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.0-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.0-reading-diagram-label', title: 'Diagram/Label Completion', type: 'question-type', questionType: 'diagram-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.0-reading-short-answer', title: 'Short-Answer Questions', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand5_0WritingSubModules = [
-  { id: 'ielts-5.0-writing-task1', title: 'Task 1: Describe Data', type: 'task-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-5.0-writing-task2', title: 'Task 2: Discursive Essays', type: 'essay-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.0-writing-graph-chart', title: 'Graph/Chart Description', type: 'task-type', questionType: 'graph-chart-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.0-writing-process-diagram', title: 'Process Diagram', type: 'task-type', questionType: 'process-diagram', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.0-writing-map', title: 'Map', type: 'task-type', questionType: 'map-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.0-writing-letter', title: 'Letter Writing', type: 'task-type', questionType: 'letter-writing', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.0-writing-essay', title: 'Essay', type: 'essay-type', questionType: 'essay-writing', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand5_0SpeakingSubModules = [
-  { id: 'ielts-5.0-speaking-part1', title: 'Part 1: Personal Questions', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
-  { id: 'ielts-5.0-speaking-part2', title: 'Part 2: Describe Topic', type: 'speaking-part', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
-  { id: 'ielts-5.0-speaking-part3', title: 'Part 3: Discussion', type: 'speaking-part', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
+  { id: 'ielts-5.0-speaking-intro-interview', title: 'Intro & Interview', type: 'speaking-part', questionType: 'intro-interview', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.0-speaking-long-turn', title: 'Long Turn', type: 'speaking-part', questionType: 'long-turn', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.0-speaking-discussion', title: 'Discussion', type: 'speaking-part', questionType: 'discussion', totalItems: 10, completedItems: 0 },
 ];
 
 // Band 5.5
@@ -331,25 +399,31 @@ const ieltsBand5_5ListeningSubModules = [
 ];
 
 const ieltsBand5_5ReadingSubModules = [
-  { id: 'ielts-5.5-reading-form-note', title: 'Form/Note Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-5.5-reading-short-answer', title: 'Short-Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
   { id: 'ielts-5.5-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-5.5-reading-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-5.5-reading-multiple-answers', title: 'Multiple Choice (Multiple answers)', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-5.5-reading-summary', title: 'Summary Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-5.5-reading-sentence', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-5.5-reading-table-flow', title: 'Table/Flow-Chart Completion', type: 'question-type', questionType: 'table-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.5-reading-tfng', title: 'TFNG', type: 'question-type', questionType: 'true-false-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.5-reading-ynng', title: 'YNNG (GT)', type: 'question-type', questionType: 'yes-no-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.5-reading-matching-headings', title: 'Matching Headings', type: 'question-type', questionType: 'matching-headings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.5-reading-matching-information', title: 'Matching Information', type: 'question-type', questionType: 'matching-information', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.5-reading-matching-features', title: 'Matching Features', type: 'question-type', questionType: 'matching-features', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.5-reading-matching-sentence-endings', title: 'Matching Sentence Endings', type: 'question-type', questionType: 'matching-sentence-endings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.5-reading-summary-note-table-flow', title: 'Summary/Note/Table/Flow-Chart Completion', type: 'question-type', questionType: 'summary-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.5-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.5-reading-diagram-label', title: 'Diagram/Label Completion', type: 'question-type', questionType: 'diagram-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.5-reading-short-answer', title: 'Short-Answer Questions', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand5_5WritingSubModules = [
-  { id: 'ielts-5.5-writing-task1', title: 'Task 1: Complex Visuals', type: 'task-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-5.5-writing-task2', title: 'Task 2: Balanced Arguments', type: 'essay-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.5-writing-graph-chart', title: 'Graph/Chart Description', type: 'task-type', questionType: 'graph-chart-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.5-writing-process-diagram', title: 'Process Diagram', type: 'task-type', questionType: 'process-diagram', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.5-writing-map', title: 'Map', type: 'task-type', questionType: 'map-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.5-writing-letter', title: 'Letter Writing', type: 'task-type', questionType: 'letter-writing', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.5-writing-essay', title: 'Essay', type: 'essay-type', questionType: 'essay-writing', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand5_5SpeakingSubModules = [
-  { id: 'ielts-5.5-speaking-part1', title: 'Part 1: Detailed Responses', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
-  { id: 'ielts-5.5-speaking-part2', title: 'Part 2: Extended Monologue', type: 'speaking-part', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
-  { id: 'ielts-5.5-speaking-part3', title: 'Part 3: In-depth Discussion', type: 'speaking-part', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
+  { id: 'ielts-5.5-speaking-intro-interview', title: 'Intro & Interview', type: 'speaking-part', questionType: 'intro-interview', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.5-speaking-long-turn', title: 'Long Turn', type: 'speaking-part', questionType: 'long-turn', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-5.5-speaking-discussion', title: 'Discussion', type: 'speaking-part', questionType: 'discussion', totalItems: 10, completedItems: 0 },
 ];
 
 // Band 6.0
@@ -365,25 +439,31 @@ const ieltsBand6_0ListeningSubModules = [
 ];
 
 const ieltsBand6_0ReadingSubModules = [
-  { id: 'ielts-6.0-reading-form-note', title: 'Form/Note Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-6.0-reading-short-answer', title: 'Short-Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
   { id: 'ielts-6.0-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-6.0-reading-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-6.0-reading-multiple-answers', title: 'Multiple Choice (Multiple answers)', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-6.0-reading-summary', title: 'Summary Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-6.0-reading-sentence', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-6.0-reading-table-flow', title: 'Table/Flow-Chart Completion', type: 'question-type', questionType: 'table-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.0-reading-tfng', title: 'TFNG', type: 'question-type', questionType: 'true-false-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.0-reading-ynng', title: 'YNNG (GT)', type: 'question-type', questionType: 'yes-no-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.0-reading-matching-headings', title: 'Matching Headings', type: 'question-type', questionType: 'matching-headings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.0-reading-matching-information', title: 'Matching Information', type: 'question-type', questionType: 'matching-information', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.0-reading-matching-features', title: 'Matching Features', type: 'question-type', questionType: 'matching-features', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.0-reading-matching-sentence-endings', title: 'Matching Sentence Endings', type: 'question-type', questionType: 'matching-sentence-endings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.0-reading-summary-note-table-flow', title: 'Summary/Note/Table/Flow-Chart Completion', type: 'question-type', questionType: 'summary-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.0-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.0-reading-diagram-label', title: 'Diagram/Label Completion', type: 'question-type', questionType: 'diagram-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.0-reading-short-answer', title: 'Short-Answer Questions', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand6_0WritingSubModules = [
-  { id: 'ielts-6.0-writing-task1', title: 'Task 1: Advanced Descriptions', type: 'task-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
-  { id: 'ielts-6.0-writing-task2', title: 'Task 2: Analytical Essays', type: 'essay-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
+  { id: 'ielts-6.0-writing-graph-chart', title: 'Graph/Chart Description', type: 'task-type', questionType: 'graph-chart-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.0-writing-process-diagram', title: 'Process Diagram', type: 'task-type', questionType: 'process-diagram', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.0-writing-map', title: 'Map', type: 'task-type', questionType: 'map-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.0-writing-letter', title: 'Letter Writing', type: 'task-type', questionType: 'letter-writing', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.0-writing-essay', title: 'Essay', type: 'essay-type', questionType: 'essay-writing', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand6_0SpeakingSubModules = [
-  { id: 'ielts-6.0-speaking-part1', title: 'Part 1: Fluent Responses', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
-  { id: 'ielts-6.0-speaking-part2', title: 'Part 2: Coherent Monologue', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
-  { id: 'ielts-6.0-speaking-part3', title: 'Part 3: Abstract Discussion', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
+  { id: 'ielts-6.0-speaking-intro-interview', title: 'Intro & Interview', type: 'speaking-part', questionType: 'intro-interview', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.0-speaking-long-turn', title: 'Long Turn', type: 'speaking-part', questionType: 'long-turn', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.0-speaking-discussion', title: 'Discussion', type: 'speaking-part', questionType: 'discussion', totalItems: 10, completedItems: 0 },
 ];
 
 // Band 6.5
@@ -399,25 +479,31 @@ const ieltsBand6_5ListeningSubModules = [
 ];
 
 const ieltsBand6_5ReadingSubModules = [
-  { id: 'ielts-6.5-reading-form-note', title: 'Form/Note Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-6.5-reading-short-answer', title: 'Short-Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
   { id: 'ielts-6.5-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-6.5-reading-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-6.5-reading-multiple-answers', title: 'Multiple Choice (Multiple answers)', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-6.5-reading-summary', title: 'Summary Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-6.5-reading-sentence', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-6.5-reading-table-flow', title: 'Table/Flow-Chart Completion', type: 'question-type', questionType: 'table-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.5-reading-tfng', title: 'TFNG', type: 'question-type', questionType: 'true-false-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.5-reading-ynng', title: 'YNNG (GT)', type: 'question-type', questionType: 'yes-no-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.5-reading-matching-headings', title: 'Matching Headings', type: 'question-type', questionType: 'matching-headings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.5-reading-matching-information', title: 'Matching Information', type: 'question-type', questionType: 'matching-information', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.5-reading-matching-features', title: 'Matching Features', type: 'question-type', questionType: 'matching-features', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.5-reading-matching-sentence-endings', title: 'Matching Sentence Endings', type: 'question-type', questionType: 'matching-sentence-endings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.5-reading-summary-note-table-flow', title: 'Summary/Note/Table/Flow-Chart Completion', type: 'question-type', questionType: 'summary-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.5-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.5-reading-diagram-label', title: 'Diagram/Label Completion', type: 'question-type', questionType: 'diagram-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.5-reading-short-answer', title: 'Short-Answer Questions', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand6_5WritingSubModules = [
-  { id: 'ielts-6.5-writing-task1', title: 'Task 1: Complex Data Analysis', type: 'task-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
-  { id: 'ielts-6.5-writing-task2', title: 'Task 2: Critical Essays', type: 'essay-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
+  { id: 'ielts-6.5-writing-graph-chart', title: 'Graph/Chart Description', type: 'task-type', questionType: 'graph-chart-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.5-writing-process-diagram', title: 'Process Diagram', type: 'task-type', questionType: 'process-diagram', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.5-writing-map', title: 'Map', type: 'task-type', questionType: 'map-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.5-writing-letter', title: 'Letter Writing', type: 'task-type', questionType: 'letter-writing', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.5-writing-essay', title: 'Essay', type: 'essay-type', questionType: 'essay-writing', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand6_5SpeakingSubModules = [
-  { id: 'ielts-6.5-speaking-part1', title: 'Part 1: Natural Fluency', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
-  { id: 'ielts-6.5-speaking-part2', title: 'Part 2: Structured Speech', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
-  { id: 'ielts-6.5-speaking-part3', title: 'Part 3: Complex Ideas', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
+  { id: 'ielts-6.5-speaking-intro-interview', title: 'Intro & Interview', type: 'speaking-part', questionType: 'intro-interview', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.5-speaking-long-turn', title: 'Long Turn', type: 'speaking-part', questionType: 'long-turn', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-6.5-speaking-discussion', title: 'Discussion', type: 'speaking-part', questionType: 'discussion', totalItems: 10, completedItems: 0 },
 ];
 
 // Band 7.0
@@ -433,25 +519,31 @@ const ieltsBand7_0ListeningSubModules = [
 ];
 
 const ieltsBand7_0ReadingSubModules = [
-  { id: 'ielts-7.0-reading-form-note', title: 'Form/Note Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-7.0-reading-short-answer', title: 'Short-Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
   { id: 'ielts-7.0-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-7.0-reading-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-7.0-reading-multiple-answers', title: 'Multiple Choice (Multiple answers)', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-7.0-reading-summary', title: 'Summary Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-7.0-reading-sentence', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-7.0-reading-table-flow', title: 'Table/Flow-Chart Completion', type: 'question-type', questionType: 'table-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.0-reading-tfng', title: 'TFNG', type: 'question-type', questionType: 'true-false-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.0-reading-ynng', title: 'YNNG (GT)', type: 'question-type', questionType: 'yes-no-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.0-reading-matching-headings', title: 'Matching Headings', type: 'question-type', questionType: 'matching-headings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.0-reading-matching-information', title: 'Matching Information', type: 'question-type', questionType: 'matching-information', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.0-reading-matching-features', title: 'Matching Features', type: 'question-type', questionType: 'matching-features', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.0-reading-matching-sentence-endings', title: 'Matching Sentence Endings', type: 'question-type', questionType: 'matching-sentence-endings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.0-reading-summary-note-table-flow', title: 'Summary/Note/Table/Flow-Chart Completion', type: 'question-type', questionType: 'summary-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.0-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.0-reading-diagram-label', title: 'Diagram/Label Completion', type: 'question-type', questionType: 'diagram-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.0-reading-short-answer', title: 'Short-Answer Questions', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand7_0WritingSubModules = [
-  { id: 'ielts-7.0-writing-task1', title: 'Task 1: Sophisticated Analysis', type: 'task-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
-  { id: 'ielts-7.0-writing-task2', title: 'Task 2: Well-developed Essays', type: 'essay-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
+  { id: 'ielts-7.0-writing-graph-chart', title: 'Graph/Chart Description', type: 'task-type', questionType: 'graph-chart-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.0-writing-process-diagram', title: 'Process Diagram', type: 'task-type', questionType: 'process-diagram', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.0-writing-map', title: 'Map', type: 'task-type', questionType: 'map-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.0-writing-letter', title: 'Letter Writing', type: 'task-type', questionType: 'letter-writing', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.0-writing-essay', title: 'Essay', type: 'essay-type', questionType: 'essay-writing', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand7_0SpeakingSubModules = [
-  { id: 'ielts-7.0-speaking-part1', title: 'Part 1: Sophisticated Responses', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
-  { id: 'ielts-7.0-speaking-part2', title: 'Part 2: Detailed Discourse', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
-  { id: 'ielts-7.0-speaking-part3', title: 'Part 3: Abstract Concepts', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
+  { id: 'ielts-7.0-speaking-intro-interview', title: 'Intro & Interview', type: 'speaking-part', questionType: 'intro-interview', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.0-speaking-long-turn', title: 'Long Turn', type: 'speaking-part', questionType: 'long-turn', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.0-speaking-discussion', title: 'Discussion', type: 'speaking-part', questionType: 'discussion', totalItems: 10, completedItems: 0 },
 ];
 
 // Band 7.5
@@ -467,25 +559,31 @@ const ieltsBand7_5ListeningSubModules = [
 ];
 
 const ieltsBand7_5ReadingSubModules = [
-  { id: 'ielts-7.5-reading-form-note', title: 'Form/Note Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-7.5-reading-short-answer', title: 'Short-Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
   { id: 'ielts-7.5-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-7.5-reading-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-7.5-reading-multiple-answers', title: 'Multiple Choice (Multiple answers)', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-7.5-reading-summary', title: 'Summary Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-7.5-reading-sentence', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-7.5-reading-table-flow', title: 'Table/Flow-Chart Completion', type: 'question-type', questionType: 'table-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.5-reading-tfng', title: 'TFNG', type: 'question-type', questionType: 'true-false-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.5-reading-ynng', title: 'YNNG (GT)', type: 'question-type', questionType: 'yes-no-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.5-reading-matching-headings', title: 'Matching Headings', type: 'question-type', questionType: 'matching-headings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.5-reading-matching-information', title: 'Matching Information', type: 'question-type', questionType: 'matching-information', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.5-reading-matching-features', title: 'Matching Features', type: 'question-type', questionType: 'matching-features', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.5-reading-matching-sentence-endings', title: 'Matching Sentence Endings', type: 'question-type', questionType: 'matching-sentence-endings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.5-reading-summary-note-table-flow', title: 'Summary/Note/Table/Flow-Chart Completion', type: 'question-type', questionType: 'summary-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.5-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.5-reading-diagram-label', title: 'Diagram/Label Completion', type: 'question-type', questionType: 'diagram-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.5-reading-short-answer', title: 'Short-Answer Questions', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand7_5WritingSubModules = [
-  { id: 'ielts-7.5-writing-task1', title: 'Task 1: Expert Analysis', type: 'task-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
-  { id: 'ielts-7.5-writing-task2', title: 'Task 2: Persuasive Essays', type: 'essay-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
+  { id: 'ielts-7.5-writing-graph-chart', title: 'Graph/Chart Description', type: 'task-type', questionType: 'graph-chart-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.5-writing-process-diagram', title: 'Process Diagram', type: 'task-type', questionType: 'process-diagram', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.5-writing-map', title: 'Map', type: 'task-type', questionType: 'map-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.5-writing-letter', title: 'Letter Writing', type: 'task-type', questionType: 'letter-writing', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.5-writing-essay', title: 'Essay', type: 'essay-type', questionType: 'essay-writing', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand7_5SpeakingSubModules = [
-  { id: 'ielts-7.5-speaking-part1', title: 'Part 1: Expert Responses', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
-  { id: 'ielts-7.5-speaking-part2', title: 'Part 2: Polished Speech', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
-  { id: 'ielts-7.5-speaking-part3', title: 'Part 3: Nuanced Discussion', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
+  { id: 'ielts-7.5-speaking-intro-interview', title: 'Intro & Interview', type: 'speaking-part', questionType: 'intro-interview', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.5-speaking-long-turn', title: 'Long Turn', type: 'speaking-part', questionType: 'long-turn', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-7.5-speaking-discussion', title: 'Discussion', type: 'speaking-part', questionType: 'discussion', totalItems: 10, completedItems: 0 },
 ];
 
 // Band 8.0
@@ -501,25 +599,31 @@ const ieltsBand8_0ListeningSubModules = [
 ];
 
 const ieltsBand8_0ReadingSubModules = [
-  { id: 'ielts-8.0-reading-form-note', title: 'Form/Note Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-8.0-reading-short-answer', title: 'Short-Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
   { id: 'ielts-8.0-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-8.0-reading-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-8.0-reading-multiple-answers', title: 'Multiple Choice (Multiple answers)', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-8.0-reading-summary', title: 'Summary Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-8.0-reading-sentence', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-8.0-reading-table-flow', title: 'Table/Flow-Chart Completion', type: 'question-type', questionType: 'table-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.0-reading-tfng', title: 'TFNG', type: 'question-type', questionType: 'true-false-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.0-reading-ynng', title: 'YNNG (GT)', type: 'question-type', questionType: 'yes-no-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.0-reading-matching-headings', title: 'Matching Headings', type: 'question-type', questionType: 'matching-headings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.0-reading-matching-information', title: 'Matching Information', type: 'question-type', questionType: 'matching-information', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.0-reading-matching-features', title: 'Matching Features', type: 'question-type', questionType: 'matching-features', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.0-reading-matching-sentence-endings', title: 'Matching Sentence Endings', type: 'question-type', questionType: 'matching-sentence-endings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.0-reading-summary-note-table-flow', title: 'Summary/Note/Table/Flow-Chart Completion', type: 'question-type', questionType: 'summary-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.0-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.0-reading-diagram-label', title: 'Diagram/Label Completion', type: 'question-type', questionType: 'diagram-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.0-reading-short-answer', title: 'Short-Answer Questions', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand8_0WritingSubModules = [
-  { id: 'ielts-8.0-writing-task1', title: 'Task 1: Master-Level Analysis', type: 'task-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
-  { id: 'ielts-8.0-writing-task2', title: 'Task 2: Exceptional Essays', type: 'essay-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
+  { id: 'ielts-8.0-writing-graph-chart', title: 'Graph/Chart Description', type: 'task-type', questionType: 'graph-chart-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.0-writing-process-diagram', title: 'Process Diagram', type: 'task-type', questionType: 'process-diagram', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.0-writing-map', title: 'Map', type: 'task-type', questionType: 'map-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.0-writing-letter', title: 'Letter Writing', type: 'task-type', questionType: 'letter-writing', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.0-writing-essay', title: 'Essay', type: 'essay-type', questionType: 'essay-writing', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand8_0SpeakingSubModules = [
-  { id: 'ielts-8.0-speaking-part1', title: 'Part 1: Near-Native Fluency', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
-  { id: 'ielts-8.0-speaking-part2', title: 'Part 2: Articulate Expression', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
-  { id: 'ielts-8.0-speaking-part3', title: 'Part 3: Expert Argumentation', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
+  { id: 'ielts-8.0-speaking-intro-interview', title: 'Intro & Interview', type: 'speaking-part', questionType: 'intro-interview', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.0-speaking-long-turn', title: 'Long Turn', type: 'speaking-part', questionType: 'long-turn', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.0-speaking-discussion', title: 'Discussion', type: 'speaking-part', questionType: 'discussion', totalItems: 10, completedItems: 0 },
 ];
 
 // Band 8.5
@@ -535,25 +639,31 @@ const ieltsBand8_5ListeningSubModules = [
 ];
 
 const ieltsBand8_5ReadingSubModules = [
-  { id: 'ielts-8.5-reading-form-note', title: 'Form/Note Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-8.5-reading-short-answer', title: 'Short-Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
   { id: 'ielts-8.5-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-8.5-reading-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-8.5-reading-multiple-answers', title: 'Multiple Choice (Multiple answers)', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-8.5-reading-summary', title: 'Summary Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-8.5-reading-sentence', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-8.5-reading-table-flow', title: 'Table/Flow-Chart Completion', type: 'question-type', questionType: 'table-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.5-reading-tfng', title: 'TFNG', type: 'question-type', questionType: 'true-false-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.5-reading-ynng', title: 'YNNG (GT)', type: 'question-type', questionType: 'yes-no-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.5-reading-matching-headings', title: 'Matching Headings', type: 'question-type', questionType: 'matching-headings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.5-reading-matching-information', title: 'Matching Information', type: 'question-type', questionType: 'matching-information', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.5-reading-matching-features', title: 'Matching Features', type: 'question-type', questionType: 'matching-features', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.5-reading-matching-sentence-endings', title: 'Matching Sentence Endings', type: 'question-type', questionType: 'matching-sentence-endings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.5-reading-summary-note-table-flow', title: 'Summary/Note/Table/Flow-Chart Completion', type: 'question-type', questionType: 'summary-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.5-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.5-reading-diagram-label', title: 'Diagram/Label Completion', type: 'question-type', questionType: 'diagram-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.5-reading-short-answer', title: 'Short-Answer Questions', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand8_5WritingSubModules = [
-  { id: 'ielts-8.5-writing-task1', title: 'Task 1: Excellence', type: 'task-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
-  { id: 'ielts-8.5-writing-task2', title: 'Task 2: Outstanding Essays', type: 'essay-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
+  { id: 'ielts-8.5-writing-graph-chart', title: 'Graph/Chart Description', type: 'task-type', questionType: 'graph-chart-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.5-writing-process-diagram', title: 'Process Diagram', type: 'task-type', questionType: 'process-diagram', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.5-writing-map', title: 'Map', type: 'task-type', questionType: 'map-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.5-writing-letter', title: 'Letter Writing', type: 'task-type', questionType: 'letter-writing', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.5-writing-essay', title: 'Essay', type: 'essay-type', questionType: 'essay-writing', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand8_5SpeakingSubModules = [
-  { id: 'ielts-8.5-speaking-part1', title: 'Part 1: Exceptional Mastery', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
-  { id: 'ielts-8.5-speaking-part2', title: 'Part 2: Eloquent Communication', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
-  { id: 'ielts-8.5-speaking-part3', title: 'Part 3: Superior Analysis', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
+  { id: 'ielts-8.5-speaking-intro-interview', title: 'Intro & Interview', type: 'speaking-part', questionType: 'intro-interview', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.5-speaking-long-turn', title: 'Long Turn', type: 'speaking-part', questionType: 'long-turn', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-8.5-speaking-discussion', title: 'Discussion', type: 'speaking-part', questionType: 'discussion', totalItems: 10, completedItems: 0 },
 ];
 
 // Band 9.0
@@ -569,26 +679,52 @@ const ieltsBand9_0ListeningSubModules = [
 ];
 
 const ieltsBand9_0ReadingSubModules = [
-  { id: 'ielts-9.0-reading-form-note', title: 'Form/Note Completion', type: 'question-type', questionType: 'form-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-9.0-reading-short-answer', title: 'Short-Answer', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
   { id: 'ielts-9.0-reading-multiple-choice', title: 'Multiple Choice', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-9.0-reading-matching', title: 'Matching', type: 'question-type', questionType: 'matching', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-9.0-reading-multiple-answers', title: 'Multiple Choice (Multiple answers)', type: 'question-type', questionType: 'multiple-choice', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-9.0-reading-summary', title: 'Summary Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-9.0-reading-sentence', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
-  { id: 'ielts-9.0-reading-table-flow', title: 'Table/Flow-Chart Completion', type: 'question-type', questionType: 'table-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-9.0-reading-tfng', title: 'TFNG', type: 'question-type', questionType: 'true-false-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-9.0-reading-ynng', title: 'YNNG (GT)', type: 'question-type', questionType: 'yes-no-not-given', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-9.0-reading-matching-headings', title: 'Matching Headings', type: 'question-type', questionType: 'matching-headings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-9.0-reading-matching-information', title: 'Matching Information', type: 'question-type', questionType: 'matching-information', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-9.0-reading-matching-features', title: 'Matching Features', type: 'question-type', questionType: 'matching-features', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-9.0-reading-matching-sentence-endings', title: 'Matching Sentence Endings', type: 'question-type', questionType: 'matching-sentence-endings', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-9.0-reading-summary-note-table-flow', title: 'Summary/Note/Table/Flow-Chart Completion', type: 'question-type', questionType: 'summary-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-9.0-reading-sentence-completion', title: 'Sentence Completion', type: 'question-type', questionType: 'sentence-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-9.0-reading-diagram-label', title: 'Diagram/Label Completion', type: 'question-type', questionType: 'diagram-completion', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-9.0-reading-short-answer', title: 'Short-Answer Questions', type: 'question-type', questionType: 'short-answer', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand9_0WritingSubModules = [
-  { id: 'ielts-9.0-writing-task1', title: 'Task 1: Perfect Mastery', type: 'task-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
-  { id: 'ielts-9.0-writing-task2', title: 'Task 2: Native-Level Essays', type: 'essay-type', questionType: 'short-answer', totalItems: 12, completedItems: 0 },
+  { id: 'ielts-9.0-writing-graph-chart', title: 'Graph/Chart Description', type: 'task-type', questionType: 'graph-chart-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-9.0-writing-process-diagram', title: 'Process Diagram', type: 'task-type', questionType: 'process-diagram', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-9.0-writing-map', title: 'Map', type: 'task-type', questionType: 'map-description', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-9.0-writing-letter', title: 'Letter Writing', type: 'task-type', questionType: 'letter-writing', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-9.0-writing-essay', title: 'Essay', type: 'essay-type', questionType: 'essay-writing', totalItems: 10, completedItems: 0 },
 ];
 
 const ieltsBand9_0SpeakingSubModules = [
-  { id: 'ielts-9.0-speaking-part1', title: 'Part 1: Full Operational Command', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
-  { id: 'ielts-9.0-speaking-part2', title: 'Part 2: Perfect Fluency', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
-  { id: 'ielts-9.0-speaking-part3', title: 'Part 3: Expert User', type: 'speaking-part', questionType: 'short-answer', totalItems: 15, completedItems: 0 },
+  { id: 'ielts-9.0-speaking-intro-interview', title: 'Intro & Interview', type: 'speaking-part', questionType: 'intro-interview', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-9.0-speaking-long-turn', title: 'Long Turn', type: 'speaking-part', questionType: 'long-turn', totalItems: 10, completedItems: 0 },
+  { id: 'ielts-9.0-speaking-discussion', title: 'Discussion', type: 'speaking-part', questionType: 'discussion', totalItems: 10, completedItems: 0 },
 ];
+
+
+// ============ CEFR LEVELS FOR IELTS ============
+
+export const CEFR_LEVELS = [
+  { code: 'B1' as const, label: 'B1 Level (Band 4.0 - 5.0)', bandRange: { min: 4.0, max: 5.0 } },
+  { code: 'B2' as const, label: 'B2 Level (Band 5.5 - 6.5)', bandRange: { min: 5.5, max: 6.5 } },
+  { code: 'C1' as const, label: 'C1 Level (Band 7.0 - 8.0)', bandRange: { min: 7.0, max: 8.0 } },
+  { code: 'C2' as const, label: 'C2 Level (Band 8.5 - 9.0)', bandRange: { min: 8.5, max: 9.0 } },
+];
+
+export const getCEFRBandRange = (cefrLevel: 'B1' | 'B2' | 'C1' | 'C2'): { min: number; max: number } => {
+  const level = CEFR_LEVELS.find(l => l.code === cefrLevel);
+  return level ? level.bandRange : { min: 4.0, max: 5.0 };
+};
+
+export const getCEFRLabel = (cefrLevel: 'B1' | 'B2' | 'C1' | 'C2'): string => {
+  const level = CEFR_LEVELS.find(l => l.code === cefrLevel);
+  return level ? level.label : 'B1 Level';
+};
 
 // ============ FUNCTION TO GET SUBMODULES BY BAND AND SKILL ============
 
